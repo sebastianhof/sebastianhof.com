@@ -1,0 +1,23 @@
+{
+  "name": "sebastianhof.com",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sebastianhof/sebastianhof.com",
+  "authors": [
+    "Sebastian Hof <mail@sebastianhof.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.18",
+    "traceur": "~0.0.90"
+  }
+}

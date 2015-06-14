@@ -1,0 +1,23 @@
+{
+  "name": "sebastianhof.com",
+  "version": "0.0.1",
+  "description": "sebastianhof.com in Angular 2",
+  "main": "app.js",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.26"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianhof/sebastianhof.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianhof/sebastianhof.com/issues"
+  },
+  "homepage": "https://github.com/sebastianhof/sebastianhof.com#readme"
+}
