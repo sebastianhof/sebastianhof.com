@@ -1,0 +1,8 @@
+.img-profile {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-image: url('../images/profile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

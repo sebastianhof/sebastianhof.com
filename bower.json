@@ -17,7 +17,13 @@
     "tests"
   ],
   "dependencies": {
-    "requirejs": "~2.1.18",
-    "traceur": "~0.0.90"
+    "angular": "~1.4.7",
+    "angular-cookies": "~1.4.7",
+    "angular-new-router": "~0.5.3",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "open-sans-fontface": "~1.4.2",
+    "requirejs": "~2.1.20"
   }
 }
