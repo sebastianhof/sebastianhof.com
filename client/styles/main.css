@@ -6,3 +6,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.img-project {
+    max-width: 250px;
+    max-height: 100px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.portfolio-link {
+    height: 150px;
+}
+
+.btn-blue {
+    background-color: #3B97D3;
+    color: #FFFFFF;
+}
