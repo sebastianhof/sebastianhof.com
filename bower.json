@@ -20,6 +20,8 @@
     "angular": "~1.4.7",
     "angular-cookies": "~1.4.7",
     "angular-new-router": "~0.5.3",
+    "angular-sanitize": "~1.4.7",
+    "angular-translate": "~2.8.1",
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.4.0",
     "jquery": "~2.1.4",

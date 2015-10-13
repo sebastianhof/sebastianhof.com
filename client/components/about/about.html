@@ -6,7 +6,7 @@
                 <i class="fa fa-4x fa-user"></i>
 
                 <div class="intro-text">
-                    <span class="name">About</span>
+                    <span class="name">{{ 'ABOUT' | translate }}</span>
                 </div>
             </div>
         </div>
@@ -21,33 +21,39 @@
                 <div class="text-center">
                     <i class="fa fa-3x fa-laptop"></i>
 
-                    <h3>Job</h3>
+                    <h3>{{ 'JOB' | translate }}</h3>
 
-                    <p><strong>Software Engineer and Architect</strong></p>
+                    <p><strong>{{ 'ABOUT.JOB' | translate }}</strong></p>
+
+                    <p class="text-justify">{{ 'ABOUT.JOB_TEXT' | translate }}</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="text-center">
                     <i class="fa fa-3x fa-graduation-cap"></i>
 
-                    <h3>Education</h3>
+                    <h3>{{ 'EDUCATION' | translate }}</h3>
 
-                    <p><strong>International Information Systems</strong></p>
+                    <p><strong>{{ 'ABOUT.EDUCATION' | translate }}</strong></p>
+
+                    <p class="text-justify">{{ 'ABOUT.EDUCATION_TEXT' | translate }}</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="text-center">
                     <i class="fa fa-3x fa-flask"></i>
 
-                    <h3>Research</h3>
+                    <h3>{{ 'RESEARCH' | translate }}</h3>
 
-                    <p><strong>Process Analytics and Mining</strong></p>
+                    <p><strong>{{ 'ABOUT.RESEARCH' | translate }}</strong></p>
+
+                    <p class="text-justify">{{ 'ABOUT.RESEARCH_TEXT' | translate }}</p>
                 </div>
             </div>
 
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: 50px;">
                 <a href="#" class="btn btn-lg btn-blue">
-                    <i class="fa fa-download"></i> Curriculum Vitae
+                    <i class="fa fa-download"></i> {{ 'CV' | translate }}
                 </a>
             </div>
 
@@ -55,3 +61,39 @@
     </div>
 </section>
 
+<section>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <i class="fa fa-3x fa-heartbeat"></i>
+
+                    <h3>{{ 'FITNESS' | translate }}</h3>
+
+                    <p><strong>{{ 'ABOUT.FITNESS' | translate }}</strong></p>
+                    <p class="text-justify">{{ 'ABOUT.FITNESS_TEXT' | translate }}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <i class="fa fa-3x fa-suitcase"></i>
+
+                    <h3>{{ 'ABOUT.TRAVEL' | translate }}</h3>
+                    <p class="text-justify">{{ 'ABOUT.TRAVEL_TEXT' | translate }}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <i class="fa fa-3x fa-cutlery"></i>
+
+                    <h3>{{ 'ABOUT.COOKING' | translate }}</h3>
+                    <p class="text-justify">{{ 'ABOUT.COOKING_TEXT' | translate }}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

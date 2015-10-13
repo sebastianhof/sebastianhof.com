@@ -34,14 +34,12 @@
 
 <body id="page-top" class="index" ng-app="app" ng-controller="AppController as app">
 
-<!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
+
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -49,26 +47,33 @@
             <a class="navbar-brand" href="#/">sebastianhof.com</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#/"></a>
                 </li>
-                <li class="page-scroll">
-                    <a href="#/about">About</a>
+                <li>
+                    <a href="#/about">{{ 'ABOUT' | translate }}</a>
                 </li>
-                <li class="page-scroll">
-                    <a href="#/projects">Projects</a>
+                <li>
+                    <a href="#/projects">{{ 'PROJECTS' | translate }}</a>
                 </li>
-                <li class="page-scroll">
-                    <a href="#/contact">Contact</a>
+                <li>
+                    <a href="#/contact">{{ 'CONTACT' | translate }}</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">{{ app.currentLang }}</a>
+                    <ul class="dropdown-menu">
+                        <li><a ng-click="app.selectLang('EN')">English</a></li>
+                        <li><a ng-click="app.selectLang('DE')">Deutsch</a></li>
+                        <li><a ng-click="app.selectLang('CN')">中文</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
+
     </div>
-    <!-- /.container-fluid -->
+
 </nav>
 
 <div ng-viewport></div>
@@ -78,38 +83,39 @@
     <div class="footer-above">
         <div class="container">
             <div class="row">
-                <div class="footer-col col-md-4">
-                    <!--<h3>Location</h3>-->
+                <div class="footer-col col-md-4 col-md-offset-4">
 
-                    <!--<p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>-->
-                </div>
-                <div class="footer-col col-md-4">
-                    <!--<h3></h3>-->
                     <ul class="list-inline">
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <a href="https://linkedin.com/in/sebastianhof" target="_blank"
+                               class="btn-social btn-outline">
+                                <i class="fa fa-fw fa-linkedin"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-xing"></i></a>
+                            <a href="https://www.xing.com/profile/Sebastian_Hof7" target="_blank"
+                               class="btn-social btn-outline">
+                                <i class="fa fa-fw fa-xing"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            <a href="https://github.com/sebastianhof" target="_blank" class="btn-social btn-outline">
+                                <i class="fa fa-fw fa-github"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/1656428665" target="_blank"
+                               class="btn-social btn-outline">
+                                <i class="fa fa-fw fa-facebook"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a href="https://twitter.com/snhof" target="_blank" class="btn-social btn-outline">
+                                <i class="fa fa-fw fa-twitter"></i>
+                            </a>
                         </li>
-
 
                     </ul>
-                </div>
-                <div class="footer-col col-md-4">
-                    <!--<h3>About Freelancer</h3>-->
-
-                    <!--<p>Freelance is a free to use, open source Bootstrap theme created by <a-->
-                            <!--href="http://startbootstrap.com">Start Bootstrap</a>.</p>-->
                 </div>
             </div>
         </div>
@@ -133,7 +139,6 @@
 </div>
 
 
-
 <!-- jQuery -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -142,6 +147,8 @@
 
 <!-- Angular JS -->
 <script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="bower_components/angular-translate/angular-translate.min.js"></script>
 <script src="bower_components/angular-new-router/dist/router.es5.min.js"></script>
 <script src="components/about/about.js"></script>
 <script src="components/contact/contact.js"></script>

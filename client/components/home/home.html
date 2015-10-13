@@ -6,10 +6,12 @@
                 <i class="img-responsive img-profile img-centered"></i>
 
                 <div class="intro-text">
-                    <span class="name">Sebastian Hof</span>
-                    <span class="skills">Software Engineer</span>
+                    <span class="name">{{ 'HOME.NAME' | translate }}</span>
+                    <span class="skills">{{ 'HOME.JOB_TITLE' | translate }}</span>
 
-                    <div><i class="fa fa-map-marker"></i>&nbsp;Nuremberg, Germany</div>
+                    <div>
+                        <i class="fa fa-map-marker"></i>&nbsp;{{ 'HOME.PLACE' | translate }}
+                    </div>
                 </div>
             </div>
         </div>
@@ -24,7 +26,9 @@
                 <div class="text-center">
                     <i class="fa fa-3x fa-pencil"></i>
 
-                    <h3>Design</h3>
+                    <h3>{{ 'DESIGN' | translate }}</h3>
+
+                    <p class="text-justify">{{ 'DESIGN_TEXT' | translate }}</p>
 
                 </div>
             </div>
@@ -32,7 +36,9 @@
                 <div class="text-center">
                     <i class="fa fa-3x fa-code"></i>
 
-                    <h3>Development</h3>
+                    <h3>{{ 'DEVELOPMENT' | translate }}</h3>
+
+                    <p class="text-justify">{{ 'DEVELOPMENT_TEXT' | translate }}</p>
 
                 </div>
             </div>
@@ -40,11 +46,93 @@
                 <div class="text-center">
                     <i class="fa fa-3x fa-bar-chart"></i>
 
-                    <h3>Analytics</h3>
+                    <h3>{{ 'ANALYTICS' | translate }}</h3>
+
+                    <p class="text-justify">{{ 'ANALYTICS_TEXT' | translate }}</p>
 
                 </div>
             </div>
 
         </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h3>{{ 'FRAMEWORKS_TECHNOLOGIES' | translate }}</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <div><img src="images/angularjs.png" class="img-home"></div>
+                    <h4>AngularJS</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <div><img src="images/nodejs.png" class="img-home"></div>
+                    <h4>NodeJS</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <div><img src="images/play.png" class="img-home"></div>
+                    <h4>Play Framework</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <div><img src="images/ios.png" class="img-home"></div>
+                    <h4>iOS</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <div><img src="images/javaee.png" class="img-home"></div>
+                    <h4>Java EE</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <div><img src="images/mongodb.png" class="img-home"></div>
+                    <h4>MongoDB</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <div><img src="images/cassandra.svg" class="img-home"></div>
+                    <h4>Cassandra</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <div><img src="images/spark.png" class="img-home"></div>
+                    <h4>Apache Spark</h4>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </section>

@@ -6,7 +6,7 @@
                 <i class="fa fa-4x fa-folder"></i>
 
                 <div class="intro-text">
-                    <span class="name">Projects</span>
+                    <span class="name">{{ 'PROJECTS' | translate }}</span>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioInbits" class="portfolio-link" data-toggle="modal">
+                <a href="projects#inbits" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -27,7 +27,7 @@
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioCocama" class="portfolio-link" data-toggle="modal">
+                <a href="projects#cocama" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -37,7 +37,7 @@
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item text-center">
-                <a href="#portfolioSymbio" class="portfolio-link" data-toggle="modal">
+                <a href="projects#symbio" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -47,7 +47,7 @@
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item text-center">
-                <a href="#portfolioCoubr" class="portfolio-link" data-toggle="modal">
+                <a href="projects#coubr" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -57,7 +57,7 @@
                 </a>
             </div>
             <div class="col-sm-4 portfolio-item text-center">
-                <a href="#portfolioHomepage" class="portfolio-link" data-toggle="modal">
+                <a href="projects#homepage" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -71,7 +71,7 @@
 </section>
 
 <!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioInbits" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="inbits" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -83,28 +83,25 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Inbits Platform</h2>
+                        <h2>{{ 'PROJECTS.INBITS' | translate }}</h2>
 
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
+                        <p>{{ 'PROJECTS.INBITS_TEXT' | translate }}</p>
                         <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
+                            <li>{{'PROJECTS.CLIENT' | translate}}:
+                                <strong>{{ 'PROJECTS.INBITS_CLIENT' | translate }}</strong>
                             </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
+                            <li>{{'PROJECTS.DATE' | translate}}:
+                                <strong>{{ 'PROJECTS.INBITS_DATE' | translate }}</strong>
                             </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
+                            <li>{{'PROJECTS.SERVICE' | translate}}:
+                                <strong>{{ 'PROJECTS.INBITS_SERVICE' | translate }}</strong>
+                            </li>
+                            <li>{{'PROJECTS.TECHNOLOGIES' | translate}}:
+                                <strong>{{ 'PROJECTS.INBITS_TECHNOLOGIES' | translate }}</a></strong>
                             </li>
                         </ul>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
+                            {{ 'PROJECTS.CLOSE' | translate }}
                         </button>
                     </div>
                 </div>
@@ -112,7 +109,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-modal modal fade" id="portfolioCocama" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="cocama" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -124,30 +121,25 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                        <h2>{{ 'PROJECTS.COCAMA' | translate }}</h2>
 
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
+                        <p>{{ 'PROJECTS.COCAMA_TEXT' | translate }}</p>
                         <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
+                            <li>{{'PROJECTS.CLIENT' | translate}}:
+                                <strong>{{ 'PROJECTS.COCAMA_CLIENT' | translate }}</strong>
                             </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
+                            <li>{{'PROJECTS.DATE' | translate}}:
+                                <strong>{{ 'PROJECTS.COCAMA_DATE' | translate }}</strong>
                             </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
+                            <li>{{'PROJECTS.SERVICE' | translate}}:
+                                <strong>{{ 'PROJECTS.COCAMA_SERVICE' | translate }}</strong>
+                            </li>
+                            <li>{{'PROJECTS.TECHNOLOGIES' | translate}}:
+                                <strong>{{ 'PROJECTS.COCAMA_TECHNOLOGIES' | translate }}</a></strong>
                             </li>
                         </ul>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
+                            {{ 'PROJECTS.CLOSE' | translate }}
                         </button>
                     </div>
                 </div>
@@ -155,7 +147,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-modal modal fade" id="portfolioSymbio" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="symbio" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -167,30 +159,25 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                        <h2>{{ 'PROJECTS.SYMBIO' | translate }}</h2>
 
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
+                        <p>{{ 'PROJECTS.SYMBIO_TEXT' | translate }}</p>
                         <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
+                            <li>{{'PROJECTS.CLIENT' | translate}}:
+                                <strong>{{ 'PROJECTS.SYMBIO_CLIENT' | translate }}</strong>
                             </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
+                            <li>{{'PROJECTS.DATE' | translate}}:
+                                <strong>{{ 'PROJECTS.SYMBIO_DATE' | translate }}</strong>
                             </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
+                            <li>{{'PROJECTS.SERVICE' | translate}}:
+                                <strong>{{ 'PROJECTS.SYMBIO_SERVICE' | translate }}</strong>
+                            </li>
+                            <li>{{'PROJECTS.TECHNOLOGIES' | translate}}:
+                                <strong>{{ 'PROJECTS.SYMBIO_TECHNOLOGIES' | translate }}</a></strong>
                             </li>
                         </ul>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
+                            {{ 'PROJECTS.CLOSE' | translate }}
                         </button>
                     </div>
                 </div>
@@ -198,7 +185,7 @@
         </div>
     </div>
 </div>
-<div class="portfolio-modal modal fade" id="portfolioCoubr" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="coubr" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -207,41 +194,39 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ 'PROJECTS.COUBR' | translate }}</h2>
 
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
-                        </button>
+                            <p>{{ 'PROJECTS.COUBR_TEXT' | translate }}</p>
+                            <ul class="list-inline item-details">
+                                <li>{{'PROJECTS.CLIENT' | translate}}:
+                                    <strong>{{ 'PROJECTS.COUBR_CLIENT' | translate }}</strong>
+                                </li>
+                                <li>{{'PROJECTS.DATE' | translate}}:
+                                    <strong>{{ 'PROJECTS.COUBR_DATE' | translate }}</strong>
+                                </li>
+                                <li>{{'PROJECTS.SERVICE' | translate}}:
+                                    <strong>{{ 'PROJECTS.COUBR_SERVICE' | translate }}</strong>
+                                </li>
+                                <li>{{'PROJECTS.TECHNOLOGIES' | translate}}:
+                                    <strong>{{ 'PROJECTS.COUBR_TECHNOLOGIES' | translate }}</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fa fa-times"></i>
+                                {{ 'PROJECTS.CLOSE' | translate }}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="portfolio-modal modal fade" id="portfolioHomepage" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="homepage" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -253,30 +238,25 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary">
-                        <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                        <h2>{{ 'PROJECTS.HOMEPAGE' | translate }}</h2>
 
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                            by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can
-                            download their free set with 16 icons, or you can purchase the entire set with 146 icons for
-                            only $12!</p>
+                        <p>{{ 'PROJECTS.HOMEPAGE_TEXT' | translate }}</p>
                         <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                </strong>
+                            <li>{{'PROJECTS.CLIENT' | translate}}:
+                                <strong>{{ 'PROJECTS.HOMEPAGE_CLIENT' | translate }}</strong>
                             </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                </strong>
+                            <li>{{'PROJECTS.DATE' | translate}}:
+                                <strong>{{ 'PROJECTS.HOMEPAGE_DATE' | translate }}</strong>
                             </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                </strong>
+                            <li>{{'PROJECTS.SERVICE' | translate}}:
+                                <strong>{{ 'PROJECTS.HOMEPAGE_SERVICE' | translate }}</strong>
+                            </li>
+                            <li>{{'PROJECTS.TECHNOLOGIES' | translate}}:
+                                <strong>{{ 'PROJECTS.HOMEPAGE_TECHNOLOGIES' | translate }}</a></strong>
                             </li>
                         </ul>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                            Close
+                            {{ 'PROJECTS.CLOSE' | translate }}
                         </button>
                     </div>
                 </div>

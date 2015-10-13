@@ -6,7 +6,7 @@
                 <i class="fa fa-4x fa-envelope"></i>
 
                 <div class="intro-text">
-                    <span class="name">Contact</span>
+                    <span class="name">{{ 'CONTACT' | translate }}</span>
                 </div>
             </div>
         </div>
@@ -23,8 +23,8 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" id="name" name="name" required
-                                   data-validation-required-message="Please enter your name." ng-model="contact.data.name">
+                            <input type="text" class="form-control" placeholder="{{ 'CONTACT.NAME' | translate }}" id="name" name="name" required
+                                   data-validation-required-message="{{ 'CONTACT.NAME_TEXT' | translate }}" ng-model="contact.data.name">
 
                             <p class="help-block text-danger"></p>
                         </div>
@@ -32,8 +32,8 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Email Address</label>
-                            <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required
-                                   data-validation-required-message="Please enter your email address." ng-model="contact.data.email">
+                            <input type="email" class="form-control" placeholder="{{ 'CONTACT.EMAIL' | translate }}" id="email" name="email" required
+                                   data-validation-required-message="{{ 'CONTACT.EMAIL_TEXT' | translate }}" ng-model="contact.data.email">
 
                             <p class="help-block text-danger"></p>
                         </div>
@@ -41,8 +41,8 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message" name="message" required
-                                      data-validation-required-message="Please enter a message." ng-model="contact.data.message"></textarea>
+                            <textarea rows="5" class="form-control" placeholder="{{ 'CONTACT.MESSAGE' | translate }}" id="message" name="message" required
+                                      data-validation-required-message="{{ 'CONTACT.MESSAGE_TEXT' | translate }}" ng-model="contact.data.message"></textarea>
 
                             <p class="help-block text-danger"></p>
                         </div>
@@ -52,7 +52,7 @@
                     <div id="success"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-blue btn-lg">Send</button>
+                            <button type="submit" class="btn btn-blue btn-lg">{{ 'CONTACT.SEND' | translate}}</button>
                         </div>
                     </div>
                 </form>
