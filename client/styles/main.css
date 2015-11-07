@@ -26,3 +26,32 @@
     background-color: #3B97D3;
     color: #FFFFFF;
 }
+
+.bg-home {
+    background-image: url(../images/desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-about {
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+;
+}
+
+.bg-projects {
+    background-image: url(../images/projects.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-contact {
+    background-image: url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

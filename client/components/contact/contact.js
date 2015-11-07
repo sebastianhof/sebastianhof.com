@@ -5,6 +5,7 @@ function ContactController($http) {
     var controller = this;
     this.data = {};
     this.error = false;
+    this.success = false;
 
     this.submit = function (form) {
         if (form.$valid) {
@@ -13,9 +14,11 @@ function ContactController($http) {
                 .success(function () {
                     controller.data.message = null;
                     controller.error = false;
+                    controller.success = true;
                 })
                 .error(function (response, status) {
                     controller.error = true;
+                    controller.success = false;
                 })
 
         }
