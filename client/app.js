@@ -86,7 +86,8 @@ angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'a
             'CONTACT.EMAIL_TEXT': 'Please enter your email address.',
             'CONTACT.MESSAGE': 'Message',
             'CONTACT.MESSAGE_TEXT': 'Please enter a message.',
-            'CONTACT.SEND': 'Send'
+            'CONTACT.SEND': 'Send',
+            'CONTACT.ERROR': 'Could not send error. Please try again.'
 
         });
         $translateProvider.translations('de', {

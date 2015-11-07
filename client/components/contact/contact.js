@@ -4,17 +4,18 @@ angular.module('app.contact', [])
 function ContactController($http) {
     var controller = this;
     this.data = {};
+    this.error = false;
 
     this.submit = function (form) {
         if (form.$valid) {
 
             $http.post('/api/sendMessage', this.data)
                 .success(function () {
-                    // TODO success message
                     controller.data.message = null;
+                    controller.error = false;
                 })
-                .error(function () {
-
+                .error(function (response, status) {
+                    controller.error = true;
                 })
 
         }

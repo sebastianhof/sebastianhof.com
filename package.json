@@ -4,9 +4,13 @@
   "description": "sebastianhof.com in Angular 2",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "bower": "^1.5.3",
     "ejs": "^2.3.4",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "express-validator": "^2.18.0",
+    "nodejs": "0.0.0",
+    "sendgrid": "^1.9.2"
   },
   "devDependencies": {},
   "scripts": {
