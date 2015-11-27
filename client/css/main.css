@@ -1,0 +1,61 @@
+.top {
+    margin-top: 88px;
+}
+
+.img-profile {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-image: url('../images/profile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-project {
+    max-width: 250px;
+    max-height: 100px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.img-home {
+    max-height: 50px;
+}
+
+.portfolio-link {
+    height: 150px;
+}
+
+.btn-blue {
+    background-color: #3B97D3;
+    color: #FFFFFF;
+}
+
+.bg-home {
+    background-image: url(../images/desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-about {
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+;
+}
+
+.bg-projects {
+    background-image: url(../images/projects.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-contact {
+    background-image: url(../images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

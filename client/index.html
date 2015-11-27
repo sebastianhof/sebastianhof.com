@@ -1,145 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" ng-app="app">
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
+    <!-- Title -->
     <title>sebastianhof.com</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon_60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon_76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon_120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">
+
+    <!-- Google Web Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Font awesome -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" />
+
+    <!-- Themify -->
+    <link href="bower_components/themify-icons/themify-icons.css" />
+
     <!-- Custom Fonts -->
-    <link href="bower_components/open-sans-fontface/open-sans.css" rel="stylesheet" type="text/css">
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/roboto-fontface/css/roboto-fontface.css" rel="stylesheet" type="text/css">
 
-    <!-- Custom CSS -->
-    <link href="styles/main.css" rel="stylesheet">
-    <link href="styles/freelancer.css" rel="stylesheet">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css"/>
 
+    <!-- CSS Animations -->
+    <link rel="stylesheet" href="css/animate.css"/>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="css/theme.css"/>
+    <link rel="stylesheet" href="css/color/blue-beige.css" id="color"/>
 
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="css/main.css"/>
 </head>
 
-<body id="page-top" class="index" ng-app="app" ng-controller="AppController as app">
+<body class="header-horizontal">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+<!-- FB Like -->
+<!--<div id="fb-root"></div>-->
+<!--<script>(function (d, s, id) {-->
+    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+    <!--if (d.getElementById(id)) return;-->
+    <!--js = d.createElement(s);-->
+    <!--js.id = id;-->
+    <!--js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";-->
+    <!--fjs.parentNode.insertBefore(js, fjs);-->
+<!--}(document, 'script', 'facebook-jssdk'));</script>-->
 
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#/">sebastianhof.com</a>
-        </div>
+<!-- Loader -->
+<div id="page-loader" class="bg-white"></div>
+<!-- Loader / End -->
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#/"></a>
-                </li>
-                <li>
-                    <a href="#/about">{{ 'ABOUT' | translate }}</a>
-                </li>
-                <li>
-                    <a href="#/projects">{{ 'PROJECTS' | translate }}</a>
-                </li>
-                <li>
-                    <a href="#/contact">{{ 'CONTACT' | translate }}</a>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">{{ app.currentLang }}</a>
-                    <ul class="dropdown-menu">
-                        <li><a ng-click="app.selectLang('EN')">English</a></li>
-                        <li><a ng-click="app.selectLang('DE')">Deutsch</a></li>
-                        <li><a ng-click="app.selectLang('CN')">中文</a></li>
-                    </ul>
-                </li>
+<!-- Header -->
+<header id="header" class="bg-white hidden-sm hidden-xs">
+
+    <!-- Logo -->
+    <div class="logo bg-primary">
+        <h1 class="name">{{ 'HOME.NAME' | translate }}</h1>
+        <span class="caption text-secondary">{{ 'HOME.JOB_TITLE' | translate }}</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-menu">
+        <ul class="nav nav-horizontal">
+            <li><a href="#/">{{ 'HOME' | translate }}</a></li>
+            <li><a href="#/about">{{ 'ABOUT' | translate }}</a></li>
+            <li><a href="#/projects">{{ 'PROJECTS' | translate }}</a></li>
+            <li><a href="#/contact">{{ 'CONTACT' | translate }}</a></a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">{{ app.currentLang }}</a>
+                <ul class="dropdown-menu">
+                    <li><a ng-click="app.selectLang('EN')">English</a></li>
+                    <li><a ng-click="app.selectLang('DE')">Deutsch</a></li>
+                    <li><a ng-click="app.selectLang('CN')">中文</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Social Media -->
+    <div class="social-media pull-right">
+        <a href="https://linkedin.com/in/sebastianhof" class="icon icon-xs margin-l-20"><i
+                class="fa fa-linkedin text-muted"></i></a>
+        <a href="https://www.xing.com/profile/Sebastian_Hof7" class="icon icon-xs margin-l-20"><i
+                class="fa fa-xing text-muted"></i></a>
+        <a href="https://github.com/sebastianhof" class="icon icon-xs margin-l-20"><i
+                class="fa fa-github text-muted"></i></a>
+        <a href="https://www.facebook.com/1656428665" class="icon icon-xs margin-l-20"><i
+                class="fa fa-facebook text-muted"></i></a>
+        <a href="https://twitter.com/snhof" class="icon icon-xs"><i class="fa fa-twitter text-muted"></i></a>
+    </div>
+
+</header>
+<!-- Header / End -->
+
+<!-- Content -->
+<div id="content" class="bg-white" ng-viewport>
+
+
+</div>
+<!-- Content / End -->
+
+<!-- Mobile Navigation -->
+<a href="#" id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm"
+   data-target="mobile-nav">
+    <i class="ti-menu"></i>
+</a>
+<nav id="mobile-nav" class="bg-white">
+    <div class="mobile-nav-wrapper">
+        <!-- Avatar -->
+        <img src="assets/img/photos/it-avatar-96x96.jpg" alt="..." class="img-circle margin-b-30">
+        <!-- Nav -->
+        <ul class="nav nav-vertical">
+            <li><a href="#/"><span>{{ 'HOME' | translate }}</span></a></li>
+            <li><a href="#/about"><span>{{ 'ABOUT' | translate }}</span></a></li>
+            <li><a href="#/projects"><span>{{ 'PROJECTS' | translate }}</span></a></li>
+            <li><a href="#/contact"><span>{{ 'CONTACT' | translate }}</span></a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">{{ app.currentLang }}</a>
+                <ul class="dropdown-menu">
+                    <li><a ng-click="app.selectLang('EN')">English</a></li>
+                    <li><a ng-click="app.selectLang('DE')">Deutsch</a></li>
+                    <li><a ng-click="app.selectLang('CN')">中文</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Social Media -->
+        <div class="margin-t-20">
+            <ul class="list-inline margin-t-10">
+                <li><a href="https://linkedin.com/in/sebastianhof" class="icon icon-xs"><i
+                        class="fa fa-linkedin text-muted"></i></a></li>
+                <li><a href="https://www.xing.com/profile/Sebastian_Hof7" class="icon icon-xs"><i
+                        class="fa fa-xing text-muted"></i></a></li>
+                <li><a href="https://github.com/sebastianhof" class="icon icon-xs"><i
+                        class="fa fa-github text-muted"></i></a></li>
+                <li><a href="https://www.facebook.com/1656428665" class="icon icon-xs"><i
+                        class="fa fa-facebook text-muted"></i></a></li>
+                <li><a href="https://twitter.com/snhof" class="icon icon-xs"><i
+                        class="fa fa-twitter text-muted"></i></a></li>
             </ul>
         </div>
-
     </div>
-
+    <a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" data-target="mobile-nav"><i
+            class="fa fa-times"></i></a>
 </nav>
 
-<div ng-viewport></div>
+<!-- Ajax Wrapper & Loader -->
+<div id="ajax-modal"></div>
+<div id="ajax-loader"><i class="fa fa-spinner fa-spin"></i></div>
 
-<!-- Footer -->
-<footer class="text-center">
-    <div class="footer-above">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col col-md-4 col-md-offset-4">
-
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://linkedin.com/in/sebastianhof" target="_blank"
-                               class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.xing.com/profile/Sebastian_Hof7" target="_blank"
-                               class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-xing"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/sebastianhof" target="_blank" class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/1656428665" target="_blank"
-                               class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/snhof" target="_blank" class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-twitter"></i>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-below">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    Copyright &copy; 2015 sebastianhof.com
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll visible-xs visible-sm">
-    <a class="btn btn-primary" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-    </a>
-</div>
-
-
-<!-- jQuery -->
+<!-- JS Libraries -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
@@ -156,23 +178,34 @@
 <script src="components/projects/projects.js"></script>
 <script src="app.js"></script>
 
-<!-- Plugin JavaScript -->
-<script src="scripts/classie.js"></script>
-<script src="scripts/cbpAnimatedHeader.js"></script>
+<!-- JS Plugins -->
+<script>
+    window.paceOptions = {
+        target: '#page-loader',
+        ajax: false
+    };
+</script>
+<script src="js/plugins.js"></script>
 
-<!-- Contact Form JavaScript -->
-<script src="scripts/jqBootstrapValidation.js"></script>
+<!-- JS Core -->
+<script src="js/core.js"></script>
 
-<!-- Custom Theme JavaScript -->
-<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
-<!--<script src="scripts/freelancer.js"></script>-->
+<!-- Google Map API -->
+<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>-->
 
 <!-- Google Analytics -->
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-68870001-1', 'auto');
     ga('send', 'pageview');
@@ -180,5 +213,3 @@
 </script>
 
 </body>
-
-</html>

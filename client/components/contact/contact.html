@@ -1,73 +1,71 @@
-<!-- Contact Section -->
-<header class="bg-contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <i class="fa fa-4x fa-envelope"></i>
+<!-- Section - Contact -->
+<section id="contact" class="section padding-v-60 top">
 
-                <div class="intro-text">
-                    <span class="name">{{ 'CONTACT' | translate }}</span>
-                </div>
-            </div>
-        </div>
+    <!-- BG Map -->
+    <div id="google-map" class="bg-image" data-latitude="40.758895" data-longitude="-73.985131" data-style="light"></div>
+
+    <!-- Contact Box -->
+    <div class="contact-box bg-secondary dark animated" data-animation="flipInY">
+        <h1>Don’t hesitate to <strong>contact me</strong>!</h1>
+        <!-- Contact List -->
+        <ul class="list-unstyled list-unstyled-icons">
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>1111-A Nowhere Lane,<br />Outta Sight,<br />State 90378, USA</li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">johnathandoe@suelo.pl</a></li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>+0(31)6 89764536</li>
+        </ul>
+        <a class="btn btn-primary" data-target="messenger"><span>Use Contact Form</span><i class="ti-email"></i></a>
+        <h5 class="margin-t-60">Check my social media!</h5>
+        <ul class="list-inline">
+            <li><a href="#" class="icon icon-circle icon-xs icon-facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="icon icon-circle icon-xs icon-twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="icon icon-circle icon-xs icon-google-plus"><i class="fa fa-twitter"></i></a></li>
+        </ul>
     </div>
-</header>
 
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                <form id="contactForm" name="contactForm" ng-submit="contact.submit(contactForm)">
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input type="text" class="form-control" placeholder="{{ 'CONTACT.NAME' | translate }}" id="name" name="name" required
-                                   data-validation-required-message="{{ 'CONTACT.NAME_TEXT' | translate }}" ng-model="contact.data.name">
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control" placeholder="{{ 'CONTACT.EMAIL' | translate }}" id="email" name="email" required
-                                   data-validation-required-message="{{ 'CONTACT.EMAIL_TEXT' | translate }}" ng-model="contact.data.email">
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Message</label>
-                            <textarea rows="5" class="form-control" placeholder="{{ 'CONTACT.MESSAGE' | translate }}" id="message" name="message" required
-                                      data-validation-required-message="{{ 'CONTACT.MESSAGE_TEXT' | translate }}" ng-model="contact.data.message"></textarea>
-
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <br>
-
-                    <div id="success"></div>
-                    <div class="row">
-
-                        <div class="col-xs-12" ng-if="contact.error">
-                            <div class="alert alert-danger" role="alert">{{ 'CONTACT.ERROR' | translate }}</div>
-                        </div>
-
-                        <div class="col-xs-12" ng-if="contact.success">
-                            <div class="alert alert-success" role="alert">{{ 'CONTACT.SUCCESS' | translate }}</div>
-                        </div>
-
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-blue btn-lg">{{ 'CONTACT.SEND' | translate}}</button>
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
 </section>
+<!-- Section - Contact / End -->
+
+
+<!-- Messanger -->
+<a href="#" id="messenger-toggle" data-target="messenger" class="icon icon-sm icon-circle animated" data-animation="bounceIn" data-animation-delay="300"><i class="fa fa-comments"></i></a>
+<div id="messenger" class="dark">
+    <div id="messenger-box">
+        <div class="messenger-box-content">
+            <!-- Close -->
+            <a href="#" class="messenger-close icon icon-hover icon-xs icon-circle icon-white" data-target="messenger"><i class="fa fa-times"></i></a>
+            <!-- Avatar -->
+            <img src="assets/img/photos/it-avatar-96x96.jpg" alt="..." class="img-circle margin-b-30">
+            <h3>Please fill the <strong>form</strong> - I will response as fast as I can!</h3>
+            <!-- Contact Form -->
+            <form id="contact-form" name="contactForm" ng-submit="contact.submit(contactForm)">
+                <div class="form-alert"></div>
+                <div class="form-error alert alert-default"><ul></ul></div>
+                <div class="form-group">
+                    <label>{{ 'CONTACT.NAME' | translate }}:</label>
+                    <input type="text" id="name" class="form-control"  name="name" required
+                </div>
+                <div class="form-group">
+                    <label>{{ 'CONTACT.EMAIL' | translate }}:</label>
+                    <input type="email" id="email"  class="form-control" placeholder="{{ 'CONTACT.EMAIL' | translate }}" id="email" name="email" required
+                           data-validation-required-message="{{ 'CONTACT.EMAIL_TEXT' | translate }}" ng-model="contact.data.email">
+                    <input class="form-control" type="text" name="email">
+                </div>
+                <div class="form-group">
+                    <label>{{ 'CONTACT.MESSAGE_TEXT' | translate }}:</label>
+                    <textarea rows="5" class="form-control" placeholder="{{ 'CONTACT.MESSAGE' | translate }}" id="message" name="message" required
+                              data-validation-required-message="{{ 'CONTACT.MESSAGE_TEXT' | translate }}" ng-model="contact.data.message" rows="4"></textarea>
+                </div>
+
+                <div class="col-xs-12" ng-if="contact.error">
+                    <div class="alert alert-danger" role="alert">{{ 'CONTACT.ERROR' | translate }}</div>
+                </div>
+
+                <div class="col-xs-12" ng-if="contact.success">
+                    <div class="alert alert-success" role="alert">{{ 'CONTACT.SUCCESS' | translate }}</div>
+                </div>
+
+                <button type="submit" class="btn btn-secondary"><span>{{ 'CONTACT.SEND' | translate}}</span><i class="ti-email"></i></button>
+            </form>
+        </div>
+    </div>
+</div>

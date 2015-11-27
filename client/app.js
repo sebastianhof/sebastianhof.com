@@ -1,10 +1,12 @@
 angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'app.home', 'app.about', 'app.projects', 'app.contact'])
     .config(function ($translateProvider) {
         $translateProvider.translations('en', {
+            'HOME': 'Home',
             'ABOUT': 'About',
             'PROJECTS': 'Projects',
             'CONTACT': 'Contact',
 
+            'HOME.WELCOME': 'Hi, I am',
             'HOME.NAME': 'Sebastian Hof',
             'HOME.JOB_TITLE': 'Software Engineer',
             'HOME.PLACE': 'Nuremberg, Germany',

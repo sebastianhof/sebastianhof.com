@@ -1,99 +1,290 @@
-<!-- About Section -->
-<header class="bg-about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <i class="fa fa-4x fa-user"></i>
+<section class="section padding-60 top">
+    <div class="row">
 
-                <div class="intro-text">
-                    <span class="name">{{ 'ABOUT' | translate }}</span>
-                </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-laptop"></i>
+
+                <h3>{{ 'JOB' | translate }}</h3>
+
+                <p><strong>{{ 'ABOUT.JOB' | translate }}</strong></p>
+
+                <p class="text-justify">{{ 'ABOUT.JOB_TEXT' | translate }}</p>
             </div>
         </div>
-    </div>
-</header>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-graduation-cap"></i>
 
-<section>
-    <div class="container">
-        <div class="row">
+                <h3>{{ 'EDUCATION' | translate }}</h3>
 
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-laptop"></i>
+                <p><strong>{{ 'ABOUT.EDUCATION' | translate }}</strong></p>
 
-                    <h3>{{ 'JOB' | translate }}</h3>
-
-                    <p><strong>{{ 'ABOUT.JOB' | translate }}</strong></p>
-
-                    <p class="text-justify">{{ 'ABOUT.JOB_TEXT' | translate }}</p>
-                </div>
+                <p class="text-justify">{{ 'ABOUT.EDUCATION_TEXT' | translate }}</p>
             </div>
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-graduation-cap"></i>
-
-                    <h3>{{ 'EDUCATION' | translate }}</h3>
-
-                    <p><strong>{{ 'ABOUT.EDUCATION' | translate }}</strong></p>
-
-                    <p class="text-justify">{{ 'ABOUT.EDUCATION_TEXT' | translate }}</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-flask"></i>
-
-                    <h3>{{ 'RESEARCH' | translate }}</h3>
-
-                    <p><strong>{{ 'ABOUT.RESEARCH' | translate }}</strong></p>
-
-                    <p class="text-justify">{{ 'ABOUT.RESEARCH_TEXT' | translate }}</p>
-                </div>
-            </div>
-
-            <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: 50px;">
-                <a href="#" class="btn btn-lg btn-blue">
-                    <i class="fa fa-download"></i> {{ 'CV' | translate }}
-                </a>
-            </div>
-
         </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-flask"></i>
+
+                <h3>{{ 'RESEARCH' | translate }}</h3>
+
+                <p><strong>{{ 'ABOUT.RESEARCH' | translate }}</strong></p>
+
+                <p class="text-justify">{{ 'ABOUT.RESEARCH_TEXT' | translate }}</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="row">
+<section class="section padding-60">
+    <div class="row">
 
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-heartbeat"></i>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-heartbeat"></i>
 
-                    <h3>{{ 'FITNESS' | translate }}</h3>
+                <h3>{{ 'FITNESS' | translate }}</h3>
 
-                    <p><strong>{{ 'ABOUT.FITNESS' | translate }}</strong></p>
-                    <p class="text-justify">{{ 'ABOUT.FITNESS_TEXT' | translate }}</p>
-                </div>
+                <p class="text-justify">{{ 'ABOUT.FITNESS_TEXT' | translate }}</p>
             </div>
-
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-suitcase"></i>
-
-                    <h3>{{ 'ABOUT.TRAVEL' | translate }}</h3>
-                    <p class="text-justify">{{ 'ABOUT.TRAVEL_TEXT' | translate }}</p>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-cutlery"></i>
-
-                    <h3>{{ 'ABOUT.COOKING' | translate }}</h3>
-                    <p class="text-justify">{{ 'ABOUT.COOKING_TEXT' | translate }}</p>
-                </div>
-            </div>
-
         </div>
+
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-suitcase"></i>
+
+                <h3>{{ 'ABOUT.TRAVEL' | translate }}</h3>
+
+                <p class="text-justify">{{ 'ABOUT.TRAVEL_TEXT' | translate }}</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-cutlery"></i>
+
+                <h3>{{ 'ABOUT.COOKING' | translate }}</h3>
+
+                <p class="text-justify">{{ 'ABOUT.COOKING_TEXT' | translate }}</p>
+            </div>
+        </div>
+
     </div>
 </section>
+
+<!-- Section - Resume -->
+<!--<section id="resume" class="section padding-v-60">-->
+
+<!--&lt;!&ndash; Content &ndash;&gt;-->
+<!--<div class="container container-wide">-->
+
+<!--<h6 class="margin-b-50">Resume</h6>-->
+
+<!--<div class="row padding-lg">-->
+<!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+
+<!--&lt;!&ndash; Resume Box / About &ndash;&gt;-->
+<!--<div class="resume-box">-->
+<!--<span class="icon animated" data-animation="fadeInDown"><i class="ti-comment-alt text-tertiary"></i></span>-->
+<!--<h4><strong>About</strong> Me</h4>-->
+
+<!--<p class="lead">Sed porttitor nulla eget enim gravida blandit. Integer risus nunc, molestie a nibh-->
+<!--in, interdum fringilla urna.</p>-->
+
+<!--<p>Sed lacinia, nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi-->
+<!--ligula a nulla. Nulla vitae pharetra tellus.-->
+<!--Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Resume Box / Skills &ndash;&gt;-->
+<!--<div class="resume-box">-->
+<!--<span class="icon animated" data-animation="fadeInDown"><i class="ti-cup text-tertiary"></i></span>-->
+<!--<h4><strong>Skills</strong> &amp; abilities</h4>-->
+<!--&lt;!&ndash; Skill &ndash;&gt;-->
+<!--<div class="skill">-->
+<!--<div class="progress progress-animated">-->
+<!--<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90"-->
+<!--aria-valuemin="0" aria-valuemax="100">-->
+<!--<span></span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<strong>HTML5</strong>-->
+<!--</div>-->
+<!--&lt;!&ndash; Skill &ndash;&gt;-->
+<!--<div class="skill">-->
+<!--<div class="progress progress-animated">-->
+<!--<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90"-->
+<!--aria-valuemin="0" aria-valuemax="100">-->
+<!--<span></span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<strong>CSS3</strong>-->
+<!--</div>-->
+<!--&lt;!&ndash; Skill &ndash;&gt;-->
+<!--<div class="skill">-->
+<!--<div class="progress progress-animated">-->
+<!--<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80"-->
+<!--aria-valuemin="0" aria-valuemax="100">-->
+<!--<span></span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<strong>JavaScript / jQuery</strong>-->
+<!--</div>-->
+<!--&lt;!&ndash; Skill &ndash;&gt;-->
+<!--<div class="skill">-->
+<!--<div class="progress progress-animated">-->
+<!--<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60"-->
+<!--aria-valuemin="0" aria-valuemax="100">-->
+<!--<span></span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<strong>AngularJS</strong>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+
+<!--&lt;!&ndash; Resume Box / Specilities &ndash;&gt;-->
+<!--<div class="resume-box">-->
+<!--<span class="icon animated" data-animation="fadeInDown"><i-->
+<!--class="ti-mouse-alt text-tertiary"></i></span>-->
+<!--<h4>My <strong>Specialities</strong></h4>-->
+<!--&lt;!&ndash; Speciality &ndash;&gt;-->
+<!--<div class="speciality">-->
+<!--<span class="speciality-icon"><i class="text-muted-2x ti-desktop"></i></span>-->
+
+<!--<div class="speciality-content">-->
+<!--<h5 class="margin-b-0">Website production</h5>-->
+
+<!--<p class="speciaity-description">Great, modern website designes.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Speciality &ndash;&gt;-->
+<!--<div class="speciality">-->
+<!--<span class="speciality-icon"><i class="text-muted-2x ti-layers-alt"></i></span>-->
+
+<!--<div class="speciality-content">-->
+<!--<h5 class="margin-b-0">Front-End Development</h5>-->
+
+<!--<p class="speciaity-description">Great, modern website designes.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Speciality &ndash;&gt;-->
+<!--<div class="speciality">-->
+<!--<span class="speciality-icon"><i class="text-muted-2x ti-mobile"></i></span>-->
+
+<!--<div class="speciality-content">-->
+<!--<h5 class="margin-b-0">Responsive design</h5>-->
+
+<!--<p class="speciaity-description">Great, modern website designes.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Resume Box / Education and Jobs &ndash;&gt;-->
+<!--<div class="resume-box">-->
+<!--<span class="icon animated" data-animation="fadeInDown"><i-->
+<!--class="ti-calendar text-tertiary"></i></span>-->
+<!--<h4><strong>Education</strong> &amp; jobs</h4>-->
+
+<!--<div class="timeline">-->
+<!--&lt;!&ndash; Single event &ndash;&gt;-->
+<!--<div class="timeline-event te-primary">-->
+<!--<span class="event-date">Jan 2004 - Dec 2006</span>-->
+<!--<span class="event-name">Specialization course</span>-->
+<!--<span class="event-description">University of studies, Poland, Cracow</span>-->
+<!--</div>-->
+<!--&lt;!&ndash; Single event &ndash;&gt;-->
+<!--<div class="timeline-event te-primary">-->
+<!--<span class="event-date">Jan 2004 - Dec 2006</span>-->
+<!--<span class="event-name">Specialization course</span>-->
+<!--<span class="event-description">University of studies, Poland, Cracow</span>-->
+<!--</div>-->
+<!--&lt;!&ndash; Single event &ndash;&gt;-->
+<!--<div class="timeline-event te-primary">-->
+<!--<span class="event-date">Jan 2004 - Dec 2006</span>-->
+<!--<span class="event-name">Specialization course</span>-->
+<!--<span class="event-description">University of studies, Poland, Cracow</span>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+
+<!--&lt;!&ndash; Resume Box / Languages &ndash;&gt;-->
+<!--<div class="resume-box">-->
+<!--<span class="icon animated" data-animation="fadeInDown"><i class="ti-cup text-tertiary"></i></span>-->
+<!--<h4><strong>Language</strong> skills</h4>-->
+<!--&lt;!&ndash; Skill &ndash;&gt;-->
+<!--<div class="skill">-->
+<!--<div class="progress progress-animated">-->
+<!--<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="100"-->
+<!--aria-valuemin="0" aria-valuemax="100">-->
+<!--<span></span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<strong>Polish</strong>-->
+<!--</div>-->
+<!--&lt;!&ndash; Skill &ndash;&gt;-->
+<!--<div class="skill">-->
+<!--<div class="progress progress-animated">-->
+<!--<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85"-->
+<!--aria-valuemin="0" aria-valuemax="100">-->
+<!--<span></span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<strong>English</strong>-->
+<!--</div>-->
+<!--&lt;!&ndash; Skill &ndash;&gt;-->
+<!--<div class="skill">-->
+<!--<div class="progress progress-animated">-->
+<!--<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40"-->
+<!--aria-valuemin="0" aria-valuemax="100">-->
+<!--<span></span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<strong>German</strong>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Resume Box / Hobbies &ndash;&gt;-->
+<!--<div class="resume-box">-->
+<!--<span class="icon animated" data-animation="fadeInDown"><i-->
+<!--class="ti-music-alt text-tertiary"></i></span>-->
+<!--<h4><strong>Hobbies</strong> &amp; Interests</h4>-->
+<!--<ul class="list-inline">-->
+<!--<li>-->
+<!--<div class="icon-box text-center">-->
+<!--<span class="icon icon-sm icon-circle icon-primary icon-filled"><i-->
+<!--class="ti-music-alt"></i></span>-->
+<!--<span class="title">Music</span>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<div class="icon-box text-center">-->
+<!--<span class="icon icon-sm icon-circle icon-primary icon-filled"><i-->
+<!--class="ti-camera"></i></span>-->
+<!--<span class="title">Photography</span>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<div class="icon-box text-center">-->
+<!--<span class="icon icon-sm icon-circle icon-primary icon-filled"><i-->
+<!--class="ti-map-alt"></i></span>-->
+<!--<span class="title">Travel</span>-->
+<!--</div>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+
+<!--</section>-->
+<!--&lt;!&ndash; Section - Resume / End &ndash;&gt;-->

@@ -1,64 +1,62 @@
-<!-- Header -->
-<header class="bg-home">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <i class="img-responsive img-profile img-centered"></i>
+<!-- Section - Home -->
+<section id="start" class="section fullheight bg-secondary dark padding-v-60">
 
-                <div class="intro-text">
-                    <span class="name">{{ 'HOME.NAME' | translate }}</span>
-                    <span class="skills">{{ 'HOME.JOB_TITLE' | translate }}</span>
+    <!-- BG Image -->
+    <div class="bg-image animated infinite zooming"><img src="/images/desktop.jpg" alt="..."></div>
 
-                    <div>
-                        <i class="fa fa-map-marker"></i>&nbsp;{{ 'HOME.PLACE' | translate }}
-                    </div>
-                </div>
+    <!-- Middle -->
+    <div class="container container-wide v-bottom padding-v-80">
+        <h1 class="text-lg margin-b-0">{{ 'HOME.WELCOME' | translate }} <strong>{{ 'HOME.NAME' | translate }}</strong>
+        </h1>
+        <h5 class="text-tertiary margin-b-40">{{ 'HOME.JOB_TITLE' | translate }}</h5>
+        <span data-target="local-scroll"><a href="#/about" class="btn btn-lg btn-primary"><span>{{ 'ABOUT' | translate }}</span><i
+                class="ti-user"></i></a></span>
+        <a href="#" class="btn btn-link"><span>{{ 'CV' | translate }}</span><i class="ti-file"></i></a>
+    </div>
+
+</section>
+<!-- Section - Home / End -->
+
+<section class="section padding-60">
+
+    <div class="row">
+
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-pencil"></i>
+
+                <h3>{{ 'DESIGN' | translate }}</h3>
+
+                <p class="text-justify">{{ 'DESIGN_TEXT' | translate }}</p>
+
             </div>
         </div>
-    </div>
-</header>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-code"></i>
 
-<section>
-    <div class="container">
-        <div class="row">
+                <h3>{{ 'DEVELOPMENT' | translate }}</h3>
 
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-pencil"></i>
+                <p class="text-justify">{{ 'DEVELOPMENT_TEXT' | translate }}</p>
 
-                    <h3>{{ 'DESIGN' | translate }}</h3>
-
-                    <p class="text-justify">{{ 'DESIGN_TEXT' | translate }}</p>
-
-                </div>
             </div>
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-code"></i>
-
-                    <h3>{{ 'DEVELOPMENT' | translate }}</h3>
-
-                    <p class="text-justify">{{ 'DEVELOPMENT_TEXT' | translate }}</p>
-
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <i class="fa fa-3x fa-bar-chart"></i>
-
-                    <h3>{{ 'ANALYTICS' | translate }}</h3>
-
-                    <p class="text-justify">{{ 'ANALYTICS_TEXT' | translate }}</p>
-
-                </div>
-            </div>
-
         </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <i class="fa fa-3x fa-bar-chart"></i>
+
+                <h3>{{ 'ANALYTICS' | translate }}</h3>
+
+                <p class="text-justify">{{ 'ANALYTICS_TEXT' | translate }}</p>
+
+            </div>
+        </div>
+
     </div>
+
 </section>
 
-<section>
-    <div class="container">
+<section class="section padding-60">
 
         <div class="row">
 
