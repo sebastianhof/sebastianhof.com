@@ -274,7 +274,14 @@ angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'a
         $translateProvider.useSanitizeValueStrategy(null);
         $translateProvider.preferredLanguage('en');
     })
-    .controller('AppController', ['$router', '$translate', AppController]);
+    .controller('AppController', ['$router', '$translate', '$rootScope', AppController])
+    .directive('loadTemplate', function() {
+        return {
+            link: function(scope, elem) {
+                Mi.init();
+            }
+        };
+    });
 
 AppController.$routeConfig = [
     {path: '/', component: 'home'},
@@ -282,7 +289,7 @@ AppController.$routeConfig = [
     {path: '/projects', component: 'projects'},
     {path: '/contact', component: 'contact'}
 ];
-function AppController($router, $translate) {
+function AppController($router, $translate, $rootScope) {
 
     this.currentLang = 'EN';
 
@@ -291,8 +298,9 @@ function AppController($router, $translate) {
         if (lang == 'DE') $translate.use('de');
         else if (lang == 'CN') $translate.use('zh-CN');
         else $translate.use('en');
-    }
+    };
 
 }
+
 
 

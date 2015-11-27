@@ -29,17 +29,16 @@ var Mi = {
 
             Pace.on('done', function(){
                 $('#page-loader').fadeOut(200);
-                self.animations();
             });
 
             self.mobileDetector();
-            self.backgrounds();
             self.scroller();
             self.masonry();
             self.ajaxLoader();
             self.mobileNav();
             self.map();
             self.forms();
+            self.animations();
 
         },
         mobileDetector: function () {
@@ -70,15 +69,6 @@ var Mi = {
             if (trueMobile) {
                 $('audio').remove();
             }
-
-        },
-        backgrounds: function() {
-
-            // Images 
-            $('.bg-image').each(function(){
-                var src = $(this).children('img').attr('src');
-                $(this).css('background-image','url('+src+')').children('img').hide();
-            });
 
         },
         animations: function() {
@@ -303,7 +293,7 @@ var Mi = {
             // Contact Form
 
             var $contactForm  = $('#contact-form');
-    
+
             $contactForm.validate({
                 errorElement: 'span',
                 errorContainer: $contactForm.find('.form-error'),
@@ -338,7 +328,7 @@ var Mi = {
                     }
                 }
             });
-        
+
             $contactForm.submit(function() {
                 $formAlert = $(this).find('.form-alert');
                 $formError = $(this).find('.form-error');
@@ -499,8 +489,4 @@ var Mi = {
     }
 };
 
-$(document).ready(function (){
 
-    Mi.init();
-
-});

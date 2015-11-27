@@ -1,7 +1,7 @@
 angular.module('app.contact', [])
-    .controller('ContactController', ['$http', ContactController]);
+    .controller('ContactController', ['$http', '$timeout', ContactController]);
 
-function ContactController($http) {
+function ContactController($http, $timeout) {
     var controller = this;
     this.data = {};
     this.error = false;
@@ -22,6 +22,6 @@ function ContactController($http) {
                 })
 
         }
-    }
+    };
 
 }
