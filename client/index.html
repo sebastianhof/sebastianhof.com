@@ -10,11 +10,11 @@
     <title>sebastianhof.com</title>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="assets/img/favicon_60x60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon_76x76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon_120x120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon_60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon_76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon_120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon_152x152.png">
 
     <!-- Google Web Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
@@ -24,10 +24,10 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font awesome -->
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link href="bower_components/font-awesome/css/font-awesome.min.css"/>
 
     <!-- Themify -->
-    <link href="bower_components/themify-icons/themify-icons.css" />
+    <link href="bower_components/themify-icons/themify-icons.css"/>
 
     <!-- Custom Fonts -->
     <link href="bower_components/roboto-fontface/css/roboto-fontface.css" rel="stylesheet" type="text/css">
@@ -48,17 +48,6 @@
 
 <body class="header-horizontal">
 
-<!-- FB Like -->
-<!--<div id="fb-root"></div>-->
-<!--<script>(function (d, s, id) {-->
-    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
-    <!--if (d.getElementById(id)) return;-->
-    <!--js = d.createElement(s);-->
-    <!--js.id = id;-->
-    <!--js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";-->
-    <!--fjs.parentNode.insertBefore(js, fjs);-->
-<!--}(document, 'script', 'facebook-jssdk'));</script>-->
-
 <!-- Loader -->
 <div id="page-loader" class="bg-white"></div>
 <!-- Loader / End -->
@@ -75,10 +64,10 @@
     <!-- Navigation -->
     <nav id="main-menu">
         <ul class="nav nav-horizontal">
-            <li><a href="#/">{{ 'HOME' | translate }}</a></li>
-            <li><a href="#/about">{{ 'ABOUT' | translate }}</a></li>
-            <li><a href="#/projects">{{ 'PROJECTS' | translate }}</a></li>
-            <li><a href="#/contact">{{ 'CONTACT' | translate }}</a></li>
+            <li><a href="#/">{{ 'HOME.HOME' | translate }}</a></li>
+            <li><a href="#/about">{{ 'ABOUT.ABOUT' | translate }}</a></li>
+            <li><a href="#/projects">{{ 'PROJECTS.PROJECTS' | translate }}</a></li>
+            <li><a href="#/contact">{{ 'CONTACT.CONTACT' | translate }}</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown">{{ app.currentLang }}</a>
                 <ul class="dropdown-menu">
@@ -100,7 +89,8 @@
                 class="fa fa-github text-muted"></i></a>
         <a href="https://www.facebook.com/1656428665" class="icon icon-xs margin-l-20" target="_blank"><i
                 class="fa fa-facebook text-muted"></i></a>
-        <a href="https://twitter.com/snhof" class="icon icon-xs" target="_blank"><i class="fa fa-twitter text-muted"></i></a>
+        <a href="https://twitter.com/snhof" class="icon icon-xs" target="_blank"><i
+                class="fa fa-twitter text-muted"></i></a>
     </div>
 
 </header>
@@ -121,13 +111,13 @@
 <nav id="mobile-nav" class="bg-white">
     <div class="mobile-nav-wrapper">
         <!-- Avatar -->
-        <img src="assets/img/photos/it-avatar-96x96.jpg" alt="..." class="img-circle margin-b-30">
+        <img src="images/profile-96.png" alt="..." class="img-circle margin-b-30">
         <!-- Nav -->
         <ul class="nav nav-vertical">
-            <li><a href="#/"><span>{{ 'HOME' | translate }}</span></a></li>
-            <li><a href="#/about"><span>{{ 'ABOUT' | translate }}</span></a></li>
-            <li><a href="#/projects"><span>{{ 'PROJECTS' | translate }}</span></a></li>
-            <li><a href="#/contact"><span>{{ 'CONTACT' | translate }}</span></a></li>
+            <li><a href="#/"><span>{{ 'HOME.HOME' | translate }}</span></a></li>
+            <li><a href="#/about"><span>{{ 'ABOUT.ABOUT' | translate }}</span></a></li>
+            <li><a href="#/projects"><span>{{ 'PROJECTS.PROJECTS' | translate }}</span></a></li>
+            <li><a href="#/contact"><span>{{ 'CONTACT.CONTACT' | translate }}</span></a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown">{{ app.currentLang }}</a>
                 <ul class="dropdown-menu">
@@ -171,6 +161,7 @@
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+<script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 <script src="bower_components/angular-new-router/dist/router.es5.min.js"></script>
 <script src="components/about/about.js"></script>
 <script src="components/contact/contact.js"></script>

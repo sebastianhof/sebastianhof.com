@@ -13,15 +13,22 @@ function ContactController($http, $timeout) {
 
             $http.post('/api/sendMessage', this.data)
                 .success(function () {
+                    controller.data.name = null;
+                    controller.data.email = null;
                     controller.data.message = null;
                     controller.error = false;
                     controller.success = true;
+                    $timeout(function() {
+                        controller.success = false;
+                    }, 5000);
                 })
                 .error(function (response, status) {
                     controller.error = true;
                     controller.success = false;
-                })
-
+                    $timeout(function() {
+                        controller.error = false;
+                    }, 5000)
+                });
         }
     };
 

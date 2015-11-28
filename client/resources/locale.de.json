@@ -1,0 +1,91 @@
+{
+  "ABOUT": "Über mich",
+  "PROJECTS": "Projekte",
+  "CONTACT": "Kontakt",
+
+  "HOME.NAME": "Sebastian Hof",
+  "HOME.JOB_TITLE": "Software Engineer",
+  "HOME.PLACE": "Nürnberg",
+
+  "SERVICES": "Services",
+
+  "DESIGN": "Design",
+  "DESIGN_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "DEVELOPMENT": "Entwicklung",
+  "DEVELOPMENT_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "ANALYTICS": "Analytics",
+  "ANALYTICS_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "FRAMEWORKS_TECHNOLOGIES": "Frameworks und Technologien",
+
+  "JOB": "Arbeit",
+  "EDUCATION": "Ausbildung",
+  "RESEARCH": "Forschung",
+
+  "ABOUT.JOB": "Software Engineer und Architekt",
+  "ABOUT.JOB_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "ABOUT.EDUCATION": "International Information Systems M.Sc.",
+  "ABOUT.EDUCATION_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "ABOUT.RESEARCH": "Prozessanalyse und -mining",
+  "ABOUT.RESEARCH_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+
+  "ABOUT.FITNESS": "Fitness",
+  "ABOUT.FITNESS_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "ABOUT.TRAVEL": "Reisen",
+  "ABOUT.TRAVEL_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+  "ABOUT.COOKING": "Kochen",
+  "ABOUT.COOKING_TEXT": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+
+  "CV": "Lebenslauf",
+
+  "PROJECTS.CLIENT": "Kunde",
+  "PROJECTS.DATE": "Datum",
+  "PROJECTS.SERVICE": "Dienstleistung",
+  "PROJECTS.TECHNOLOGIES": "Technologien",
+  "PROJECTS.CLOSE": "Schließen",
+
+  "PROJECTS.INBITS": "INBITS Platform",
+  "PROJECTS.INBITS_TEXT": "INBITS Platform integrates various business solutions. It offers tools for collecting and developing ideas, trends, technologies. It provides tools for breaking down business strategies into concrete projects. It gives instruments for managing unpredictable and knowledge-intensive business processes. It provides tools for managing and enhancing personal goals. It offers a suite for connecting cyber-physical devices, and it integrates a platform for analyzing and mining of agile business processes.",
+  "PROJECTS.INBITS_CLIENT": "INBITS GmbH",
+  "PROJECTS.INBITS_DATE": "Aktuell",
+  "PROJECTS.INBITS_SERVICE": "Cloudplattformentwicklung",
+  "PROJECTS.INBITS_TECHNOLOGIES": "MEAN Stack, Play, Apache Spark",
+
+  "PROJECTS.COCAMA": "Collaborative Case Management",
+  "PROJECTS.COCAMA_TEXT": "Collaborative Case Management (CoCaMa) is an adaptive case management platform for managing highly flexible and unpredictable business processes and projects. It provides collaboration tools for supporting knowledge workers in achieving their case goals.",
+  "PROJECTS.COCAMA_CLIENT": "INBITS GmbH",
+  "PROJECTS.COCAMA_DATE": "2012-2014",
+  "PROJECTS.COCAMA_SERVICE": "Webplattformentwicklung",
+  "PROJECTS.COCAMA_TECHNOLOGIES": "Java EE, GWT, MySQL",
+
+  "PROJECTS.SYMBIO": "Symbio Web",
+  "PROJECTS.SYMBIO_TEXT": "Symbio web is a cloud-based business process management system. With Symbio, business process architect can design and document the process architecture of their organization, process editors can model detailed BPMN and EPC processes, and process stakeholders can access released processes for reference purposes.",
+  "PROJECTS.SYMBIO_CLIENT": "Ploetz + Zeller GmbH",
+  "PROJECTS.SYMBIO_DATE": "Aktuell",
+  "PROJECTS.SYMBIO_SERVICE": "Webplattformentwicklung",
+  "PROJECTS.SYMBIO_TECHNOLOGIES": "ASP.NET MVC, AngularJS, jQuery",
+
+  "PROJECTS.COUBR": "Coubr",
+  "PROJECTS.COUBR_TEXT": "Coubr wants to bring gastronomy owners and guests together. Restaurant owner can offer coupons, loyalty stamps, and other stamps to their customers on a easy-to-use cloud platform. Customers can explore and use those offers on their smart phone.",
+  "PROJECTS.COUBR_CLIENT": "Coubr",
+  "PROJECTS.COUBR_DATE": "2014",
+  "PROJECTS.COUBR_SERVICE": "Cloudplattform und mobile Anwendungsentwicklung",
+  "PROJECTS.COUBR_TECHNOLOGIES": "MEAN Stack, iOS",
+
+  "PROJECTS.HOMEPAGE": "Homepage",
+  "PROJECTS.HOMEPAGE_TEXT": "sebastianhof.com is the personal homepage of Sebastian Hof. It informs you about me, my services, and my projects. Feel free to get in touch with me using the contact form.",
+  "PROJECTS.HOMEPAGE_CLIENT": "sebastianhof.com",
+  "PROJECTS.HOMEPAGE_DATE": "2015",
+  "PROJECTS.HOMEPAGE_SERVICE": "Webseitenentwicklung",
+  "PROJECTS.HOMEPAGE_TECHNOLOGIES": "MEAN Stack",
+
+  "CONTACT.NAME": "Name",
+  "CONTACT.NAME_TEXT": "Bitte geben Sie Ihren Namen ein.",
+  "CONTACT.EMAIL": "E-Mail-Adresse",
+  "CONTACT.EMAIL_TEXT": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+  "CONTACT.MESSAGE": "Nachricht",
+  "CONTACT.MESSAGE_TEXT": "Bitte geben Sie Ihre Nachricht ein.",
+  "CONTACT.SEND": "Senden",
+  "CONTACT.ERROR": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es nochmal.",
+  "CONTACT.SUCCESS": "Nachricht versendet."
+
+}
