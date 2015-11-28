@@ -55,7 +55,7 @@ angular.module('app.about', [])
             },
             template: '\
             <div class="skill">\
-                <div class="progress progress-animated">\
+                <div class="progress progress-animated" data-sr="enter left">\
                     <div class="progress-bar progress-bar-{{::(class || \'primary\')}}" role="progressbar" aria-valuenow="{{::value}}"\
                         aria-valuemin="0" aria-valuemax="100" style="width: {{::value}}%;">\
                         <span></span>\
@@ -65,22 +65,22 @@ angular.module('app.about', [])
             </div>',
             link: function (scope, element) {
 
-                $(element).find('.progress-animated').appear(function () {
-                    var $bar = $(this).find('.progress-bar');
-                    $bar.each(function () {
-                        setTimeout(function () {
-                            var value = $bar.attr('aria-valuenow');
-                            var i = 0;
-                            setInterval(function () {
-                                i++;
-                                if (i <= value) {
-                                    $bar.children('span').text(i + '%');
-                                }
-                            }, 15);
-                            $bar.css('width', value + '%');
-                        }, 300)
-                    });
-                });
+                //$(element).find('.progress-animated').appear(function () {
+                //    var $bar = $(this).find('.progress-bar');
+                //    $bar.each(function () {
+                //        setTimeout(function () {
+                //            var value = $bar.attr('aria-valuenow');
+                //            var i = 0;
+                //            setInterval(function () {
+                //                i++;
+                //                if (i <= value) {
+                //                    $bar.children('span').text(i + '%');
+                //                }
+                //            }, 15);
+                //            $bar.css('width', value + '%');
+                //        }, 300)
+                //    });
+                //});
 
             }
         }

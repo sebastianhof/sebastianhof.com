@@ -10,9 +10,9 @@
 
                 <!-- Resume Box / About -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-user"></i></span>
-                    <h4><strong>{{ 'ABOUT.SUMMARY' | translate }}</strong></h4>
+                    <h4 data-sr="enter left, move 32px"><strong>{{ 'ABOUT.SUMMARY' | translate }}</strong></h4>
 
                     <p class="lead">
                         {{ 'SUMMARY.TEXT' | translate }}
@@ -23,9 +23,9 @@
 
                 <!-- Resume Box / Jobs -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-suitcase"></i></span>
-                    <h4><strong>{{ 'ABOUT.WORK' | translate }}</strong></h4>
+                    <h4 data-sr="enter left, move 32px"><strong>{{ 'ABOUT.WORK' | translate }}</strong></h4>
 
                     <div class="timeline">
                         <about-timeline-event timespan="WORK.RESEARCH.TIMESPAN" title="WORK.RESEARCH"
@@ -45,9 +45,9 @@
 
                 <!-- Resume Box / Education -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-graduation-cap"></i></span>
-                    <h4><strong>{{ 'ABOUT.EDUCATION' | translate }}</strong></h4>
+                    <h4 data-sr="enter left, move 32px"><strong>{{ 'ABOUT.EDUCATION' | translate }}</strong></h4>
 
                     <div class="timeline">
                         <about-timeline-event timespan="EDUCATION.IIS.TIMESPAN" title="EDUCATION.IIS"
@@ -68,9 +68,9 @@
 
                 <!-- Resume Box / Specialities -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-bullseye"></i></span>
-                    <h4><strong>{{ 'ABOUT.SPECIALITIES' | translate }}</strong></h4>
+                    <h4 data-sr="enter left, move 32px"><strong>{{ 'ABOUT.SPECIALITIES' | translate }}</strong></h4>
                     <about-speciality title="SPECIALITIES.WEB_DEVELOPMENT"
                                       descripion="SPECIALITIES.WEB_DEVELOPMENT.DESCRIPTION"
                                       icon="fa-globe"></about-speciality>
@@ -88,9 +88,9 @@
 
                 <!-- Resume Box / Skills -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-line-chart"></i></span>
-                    <h4><strong>{{ 'ABOUT.SKILLS' | translate }}</strong></h4>
+                    <h4 data-sr="enter left, move 32px"><strong>{{ 'ABOUT.SKILLS' | translate }}</strong></h4>
                     <h6><strong>{{ 'SKILLS.PROGRAMMING_LANGUAGES' | translate}}</strong></h6>
                     <about-skill value="100" title="Javascript"></about-skill>
                     <about-skill value="70" title="Java"></about-skill>
@@ -132,9 +132,9 @@
 
                 <!-- Resume Box / Certifications -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-certificate"></i></span>
-                    <h4><strong>{{ 'ABOUT.CERTIFICATIONS' | translate }}</strong></h4>
+                    <h4 data-sr="enter left, move 32px"><strong>{{ 'ABOUT.CERTIFICATIONS' | translate }}</strong></h4>
                     <ul class="list-unstyled">
                         <li>ISTQB Certified Tester Foundation</li>
                         <li>Microsoft Certified Professional</li>
@@ -145,9 +145,9 @@
 
                 <!-- Resume Box / Languages -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-flag"></i></span>
-                    <h4><strong>{{ 'ABOUT.LANGUAGES' | translate }}</strong></h4>
+                    <h4 data-sr="enter left, move 32px"><strong>{{ 'ABOUT.LANGUAGES' | translate }}</strong></h4>
 
                     <about-skill value="100" title="LANGUAGES.GERMAN"></about-skill>
                     <about-skill value="90" title="LANGUAGES.ENGLISH"></about-skill>
@@ -160,9 +160,9 @@
 
                 <!-- Resume Box / Hobbies -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-camera"></i></span>
-                    <h4><strong>{{ 'ABOUT.INTERESTS' | translate }}</strong></h4>
+                    <h4 data-sr="enter left, move 32px"><strong>{{ 'ABOUT.INTERESTS' | translate }}</strong></h4>
                     <ul class="list-inline">
                         <li>
                             <about-interest title="INTERESTS.FITNESS" icon="fa-heartbeat"></about-interest>
@@ -181,9 +181,9 @@
 
                 <!-- Resume Box / Download -->
                 <div class="resume-box">
-                    <span class="icon animated fadeInDown visible"><i
+                    <span class="icon"><i
                             class="fa fa-download"></i></span>
-                    <a href="resources/cv.pdf" class="btn btn-primary" target="_blank"><span>{{ 'ABOUT.DOWNLOAD' | translate }}</span><i
+                    <a href="resources/cv.pdf" class="btn btn-primary" target="_blank" data-sr="scale up 50%"><span>{{ 'ABOUT.DOWNLOAD' | translate }}</span><i
                             class="ti-file"></i></a>
                 </div>
 
@@ -195,3 +195,5 @@
     </div>
 
 </section>
+
+<view-loaded></view-loaded>
