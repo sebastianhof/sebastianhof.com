@@ -9,12 +9,12 @@ angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'a
         $translateProvider.preferredLanguage('en');
     })
     .controller('AppController', ['$router', '$translate', '$rootScope', AppController])
-    .directive('loadTemplate', function() {
+    .directive('viewLoaded', function() {
         return {
             link: function(scope, elem) {
-                Mi.init();
+                sr.init();
             }
-        };
+        }
     });
 
 AppController.$routeConfig = [
@@ -33,6 +33,10 @@ function AppController($router, $translate, $rootScope) {
         else if (lang == 'CN') $translate.use('zh-CN');
         else $translate.use('en');
     };
+
+    this.toggleMobileNav = function() {
+        $('body').toggleClass('mobile-nav-open');
+    }
 
 }
 

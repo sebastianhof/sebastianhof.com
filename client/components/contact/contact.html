@@ -2,10 +2,10 @@
 <section id="contact" class="section fullheight padding-v-60">
 
     <!-- BG Map -->
-    <div class="bg-image animated infinite zooming bg-contact"></div>
+    <div class="bg-image bg-contact animated visible infinite pulse zooming"></div>
 
     <!-- Contact Box -->
-    <div class="contact-box bg-secondary dark animated top" data-animation="flipInY">
+    <div class="contact-box bg-secondary dark animated visible bounceIn top">
         <h1><strong>{{'CONTACT.ME' | translate }}</strong></h1>
 
         <!-- Contact List -->
@@ -23,7 +23,7 @@
         </ul>
 
         <!-- Social media -->
-        <a class="btn btn-primary" data-target="messenger"><span>{{ 'CONTACT.USE_CONTACT_FORM' | translate }}</span><i
+        <a class="btn btn-primary" ng-click="contact.toggleContactForm()"><span>{{ 'CONTACT.USE_CONTACT_FORM' | translate }}</span><i
                 class="ti-email"></i></a>
         <h5 class="margin-t-60">{{ 'CONTACT.SOCIAL_MEDIA' | translate }}</h5>
         <ul class="list-inline">
@@ -44,14 +44,15 @@
 <!-- Section - Contact / End -->
 
 
-<!-- Messanger -->
-<a id="messenger-toggle" data-target="messenger" class="icon icon-sm icon-circle animated" data-animation="bounceIn"
-   data-animation-delay="200"><i class="fa fa-comments"></i></a>
+<!-- Messenger -->
+<a id="messenger-toggle" class="icon icon-sm icon-circle animated visible bounceIn" ng-click="contact.toggleContactForm()">
+    <i class="fa fa-comments"></i>
+</a>
 <div id="messenger" class="dark">
     <div id="messenger-box">
         <div class="messenger-box-content">
             <!-- Close -->
-            <a class="messenger-close icon icon-hover icon-xs icon-circle icon-white" data-target="messenger"><i
+            <a class="messenger-close icon icon-hover icon-xs icon-circle icon-white" ng-click="contact.toggleContactForm()"><i
                     class="fa fa-times"></i></a>
             <!-- Avatar -->
             <img src="images/profile-96.png" alt="..." class="img-circle margin-b-30">
@@ -95,6 +96,4 @@
         </div>
     </div>
 </div>
-
-<load-template></load-template>
 

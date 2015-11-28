@@ -24,41 +24,11 @@
     background-size: cover;
 }
 
-.img-project {
-    max-width: 250px;
-    max-height: 100px;
-    padding-top: 50px;
-    margin: auto;
+.zooming {
+    animation-duration: 15s;
+    -webkit-animation-duration: 15s;
+    -moz-animation-duration: 15s;
+    -o-animation-duration: 15s
 }
-
-.img-home {
-    max-height: 50px;
-}
-
-.portfolio-link {
-    height: 150px;
-}
-
-.btn-blue {
-    background-color: #3B97D3;
-    color: #FFFFFF;
-}
-
-
-.bg-about {
-    background-image: url(../images/about.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-;
-}
-
-.bg-projects {
-    background-image: url(../images/projects.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 
 

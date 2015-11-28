@@ -17,26 +17,23 @@
     <link rel="apple-touch-icon" sizes="152x152" href="images/favicon_152x152.png">
 
     <!-- Google Web Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100' rel='stylesheet' type='text/css'/>
 
     <!-- Bootstrap Core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel='stylesheet' type='text/css'/>
 
     <!-- Font awesome -->
-    <link href="bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel='stylesheet' type='text/css'/>
 
     <!-- Themify -->
-    <link href="bower_components/themify-icons/themify-icons.css"/>
+    <link href="bower_components/themify-icons/themify-icons.css" rel='stylesheet' type='text/css'/>
 
     <!-- Custom Fonts -->
-    <link href="bower_components/roboto-fontface/css/roboto-fontface.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/roboto-fontface/css/roboto-fontface.css" rel="stylesheet" type="text/css"/>
 
-    <!-- CSS Styles -->
-    <link rel="stylesheet" href="css/styles.css"/>
-
-    <!-- CSS Animations -->
-    <link rel="stylesheet" href="css/animate.css"/>
+    <!-- Animate.css -->
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- CSS Template -->
     <link rel="stylesheet" href="css/theme.css"/>
@@ -44,9 +41,10 @@
 
     <!-- CSS Main -->
     <link rel="stylesheet" href="css/main.css"/>
+
 </head>
 
-<body class="header-horizontal">
+<body class="header-horizontal" ng-controller="AppController as app">
 
 <!-- Loader -->
 <div id="page-loader" class="bg-white"></div>
@@ -104,8 +102,8 @@
 <!-- Content / End -->
 
 <!-- Mobile Navigation -->
-<a href="#" id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm"
-   data-target="mobile-nav">
+<a id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm"
+   ng-click="app.toggleMobileNav()">
     <i class="ti-menu"></i>
 </a>
 <nav id="mobile-nav" class="bg-white">
@@ -143,19 +141,17 @@
             </ul>
         </div>
     </div>
-    <a class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" data-target="mobile-nav"><i
-            class="fa fa-times"></i></a>
+    <div class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" ng-click="app.toggleMobileNav()">
+        <i class="fa fa-times"></i>
+    </div>
 </nav>
-
-<!-- Ajax Wrapper & Loader -->
-<div id="ajax-modal"></div>
-<div id="ajax-loader"><i class="fa fa-spinner fa-spin"></i></div>
 
 <!-- JS Libraries -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 
 <!-- Angular JS -->
 <script src="bower_components/angular/angular.min.js"></script>
@@ -170,16 +166,22 @@
 <script src="app.js"></script>
 
 <!-- JS Plugins -->
+
 <script>
     window.paceOptions = {
         target: '#page-loader',
         ajax: false
     };
 </script>
-<script src="js/plugins.js"></script>
+<script src="bower_components/PACE/pace.min.js"></script>
+<script>
 
-<!-- JS Core -->
-<script src="js/core.js"></script>
+    Pace.on('done', function () {
+        $('#page-loader').fadeOut(200);
+
+    });
+
+</script>
 
 <!-- Google Analytics -->
 <script>
@@ -199,5 +201,15 @@
     ga('send', 'pageview');
 
 </script>
+
+<!-- ScrollReveal -->
+<script src="bower_components/scrollreveal/dist/scrollReveal.min.js"></script>
+<script>
+    var config = {
+        reset:    true,
+    }
+    window.sr = new scrollReveal(config);
+</script>
+
 
 </body>

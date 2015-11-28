@@ -29,6 +29,9 @@
     "requirejs": "~2.1.20",
     "roboto-fontface": "~0.4.3",
     "themify-icons": "~0.1.0",
-    "angular-translate-loader-static-files": "~2.8.1"
+    "angular-translate-loader-static-files": "~2.8.1",
+    "animate.css": "animate-css#~3.4.0",
+    "scrollreveal": "scrollReveal.js#~2.3.2",
+    "PACE": "pace#~1.0.2"
   }
 }
