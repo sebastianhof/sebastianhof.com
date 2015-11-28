@@ -13,7 +13,7 @@
             <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>
                 {{ 'Am Mühlweiher 9' }}<br/>
                 {{ '91085 Weisendorf' }}<br/>
-                {{ 'GERMANY' | translate }}
+                {{ 'CONTACT.GERMANY' | translate }}
             </li>
             <li><i class="inline-icon icon-before-and-after text-primary fa fa-envelope"></i>
                 <a>{{ 'contact@sebastianhof.com' }}</a>
@@ -23,9 +23,9 @@
         </ul>
 
         <!-- Social media -->
-        <a class="btn btn-primary" data-target="messenger"><span>{{ 'CONTACT.FORM' | translate }}</span><i
+        <a class="btn btn-primary" data-target="messenger"><span>{{ 'CONTACT.USE_CONTACT_FORM' | translate }}</span><i
                 class="ti-email"></i></a>
-        <h5 class="margin-t-60">{{ 'SOCIAL_MEDIA' | translate }}</h5>
+        <h5 class="margin-t-60">{{ 'CONTACT.SOCIAL_MEDIA' | translate }}</h5>
         <ul class="list-inline">
             <li><a href="https://linkedin.com/in/sebastianhof" class="icon icon-xs"><i
                     class="fa fa-2x fa-linkedin text-muted"></i></a></li>
@@ -56,20 +56,20 @@
             <!-- Avatar -->
             <img src="images/profile-96.png" alt="..." class="img-circle margin-b-30">
 
-            <h3>{{ 'CONTACT.FILL_IN' | translate }}</h3>
+            <h3>{{ 'CONTACT.FILL_IN_TEXT' | translate }}</h3>
             <!-- Contact Form -->
             <form id="contact-form" name="contactForm" ng-submit="contact.submit(contactForm)">
                 <div ng-if="contact.error">
-                    <div class="alert alert-danger">{{ 'CONTACT.ERROR' | translate }}</div>
+                    <div class="alert alert-danger">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</div>
                 </div>
                 <div ng-if="contact.success">
-                    <div class="alert alert-success">{{ 'CONTACT.SUCCESS' | translate }}</div>
+                    <div class="alert alert-success">{{ 'CONTACT.SUCCESS_MESSAGE' | translate }}</div>
                 </div>
                 <div class="alert alert-default" ng-if="contactForm.$error">
                     <ul>
                         <li ng-if="contactForm.name.$error.required">{{ 'CONTACT.NAME_TEXT' | translate }}</li>
                         <li ng-if="contactForm.email.$error.required">{{ 'CONTACT.EMAIL_TEXT' | translate }}</li>
-                        <li ng-if="contactForm.email.$error.email">{{ 'CONTACT.VALID_EMAIL_TEXT' | translate }}</li>
+                        <li ng-if="contactForm.email.$error.email">{{ 'CONTACT.EMAIL_VALID_TEXT' | translate }}</li>
                         <li ng-if="contactForm.message.$error.required">{{ 'CONTACT.MESSAGE_TEXT' | translate }}</li>
                     </ul>
                 </div>

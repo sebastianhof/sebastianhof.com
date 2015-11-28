@@ -231,7 +231,7 @@ var Mi = {
                 $('body').toggleClass('mobile-nav-open');
                 return false;
             });
-        },
+        }
     },
     Components: {
         init: function() {  
@@ -239,8 +239,7 @@ var Mi = {
             this.carousel();   
             this.modal(); 
             this.chart();
-            this.progressBar();
-            this.tooltip(); 
+            this.tooltip();
             this.popover();
             this.messenger();
             this.videoPlayer();
@@ -295,25 +294,6 @@ var Mi = {
                     setTimeout(function(){
                         $chart.data('easyPieChart').update(value);
                     },200);
-                });
-            });
-        },
-        progressBar: function() {
-
-            $('.progress-animated').appear(function() {
-                var $bar = $(this).find('.progress-bar');
-                $bar.each(function(){ 
-                    setTimeout(function() {
-                        var value = $bar.attr('aria-valuenow');
-                        var i=0;
-                        setInterval(function() {
-                            i++;
-                            if(i<=value) {
-                                $bar.children('span').text(i+'%');
-                            };
-                        }, 15);
-                        $bar.css('width',value+'%');
-                    },300)
                 });
             });
         },

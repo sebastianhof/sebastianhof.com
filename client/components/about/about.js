@@ -62,7 +62,27 @@ angular.module('app.about', [])
                     </div>\
                 </div>\
                 <strong>{{ title | translate }}</strong>\
-            </div>'
+            </div>',
+            link: function (scope, element) {
+
+                $(element).find('.progress-animated').appear(function () {
+                    var $bar = $(this).find('.progress-bar');
+                    $bar.each(function () {
+                        setTimeout(function () {
+                            var value = $bar.attr('aria-valuenow');
+                            var i = 0;
+                            setInterval(function () {
+                                i++;
+                                if (i <= value) {
+                                    $bar.children('span').text(i + '%');
+                                }
+                            }, 15);
+                            $bar.css('width', value + '%');
+                        }, 300)
+                    });
+                });
+
+            }
         }
     })
 
