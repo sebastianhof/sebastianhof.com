@@ -7,6 +7,7 @@ function ContactController($http, $timeout) {
     this.error = false;
     this.success = false;
 
+
     this.submit = function (form) {
         if (form.$valid) {
 

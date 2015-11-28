@@ -11,6 +11,8 @@ angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'a
             'HOME.JOB_TITLE': 'Software Engineer',
             'HOME.PLACE': 'Nuremberg, Germany',
 
+            'SERVICES': 'Software engineering services',
+
             'DESIGN': 'Design',
             'DESIGN_TEXT': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
             'DEVELOPMENT': 'Development',
@@ -19,10 +21,20 @@ angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'a
             'ANALYTICS_TEXT': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
             'FRAMEWORKS_TECHNOLOGIES': 'Frameworks and Technologies',
 
+            'ANGULAR_TEXT': '',
+            'NODEJS_TEXT': '',
+            'PLAY_TEXT': '',
+            'IOS_TEXT': '',
+            'JAVAEE_TEXT': '',
+            'ASPNET_TEXT': '',
+            'MONGO_TEXT': '',
+            'SPARK_TEXT': '',
+
             'JOB': 'Job',
             'EDUCATION': 'Education',
             'RESEARCH': 'Research',
 
+            'ABOUT.OVERVIEW': 'Overview',
             'ABOUT.JOB': 'Software Engineer and Architect',
             'ABOUT.JOB_TEXT': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
             'ABOUT.EDUCATION': 'International Information Systems M.Sc.',
@@ -30,12 +42,14 @@ angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'a
             'ABOUT.RESEARCH': 'Process Analytics and Mining',
             'ABOUT.RESEARCH_TEXT': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
 
-            'ABOUT.FITNESS': 'Fitness',
-            'ABOUT.FITNESS_TEXT': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-            'ABOUT.TRAVEL': 'Travel',
-            'ABOUT.TRAVEL_TEXT': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
-            'ABOUT.COOKING': 'Cooking',
-            'ABOUT.COOKING_TEXT': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+            'ABOUT.RESUME': 'Resume',
+
+
+            'ABOUT.INTERESTS': 'Interests',
+            'FITNESS': 'Fitness',
+            'TRAVEL': 'Travel',
+            'PHOTOGRAPHY': 'Photography',
+            'COOKING': 'Cooking',
 
             'CV': 'Curriculum Vitae',
 
@@ -80,15 +94,21 @@ angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'a
             'PROJECTS.HOMEPAGE_SERVICE': 'Web page development',
             'PROJECTS.HOMEPAGE_TECHNOLOGIES': 'MEAN Stack',
 
+            'SOCIAL_MEDIA': 'Social media',
+            'CONTACT.ME': 'Contact me',
+            'CONTACT.FORM': 'Use contact form',
             'CONTACT.NAME': 'Name',
+            'CONTACT.FILL_IN': 'Please fill the contact form',
             'CONTACT.NAME_TEXT': 'Please enter your name.',
             'CONTACT.EMAIL': 'Email address',
             'CONTACT.EMAIL_TEXT': 'Please enter your email address.',
+            'CONTACT.VALID_EMAIL_TEXT': 'Please enter a valid email address.',
             'CONTACT.MESSAGE': 'Message',
             'CONTACT.MESSAGE_TEXT': 'Please enter a message.',
             'CONTACT.SEND': 'Send',
             'CONTACT.ERROR': 'Could not send message. Please try again.',
-            'CONTACT.SUCCESS': 'Message sent.'
+            'CONTACT.SUCCESS': 'Message sent.',
+            'GERMANY': "Germany"
 
         });
         $translateProvider.translations('de', {
@@ -99,6 +119,8 @@ angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'a
             'HOME.NAME': 'Sebastian Hof',
             'HOME.JOB_TITLE': 'Software Engineer',
             'HOME.PLACE': 'Nürnberg',
+
+            'SERVICES': 'Services',
 
             'DESIGN': 'Design',
             'DESIGN_TEXT': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',

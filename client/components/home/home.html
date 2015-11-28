@@ -2,14 +2,14 @@
 <section id="start" class="section fullheight bg-secondary dark padding-v-60">
 
     <!-- BG Image -->
-    <div class="bg-image animated infinite zooming" style="background-image: url('images/desktop.jpg')"></div>
+    <div class="bg-image animated infinite zooming bg-home"></div>
 
     <!-- Middle -->
     <div class="container container-wide v-bottom padding-v-80">
         <h1 class="text-lg margin-b-0">{{ 'HOME.WELCOME' | translate }} <strong>{{ 'HOME.NAME' | translate }}</strong>
         </h1>
-        <h5 class="text-tertiary margin-b-40">{{ 'HOME.JOB_TITLE' | translate }}</h5>
-        <span data-target="local-scroll"><a href="#/about" class="btn btn-lg btn-primary"><span>{{ 'ABOUT' | translate }}</span><i
+        <h5 class="margin-b-40">{{ 'HOME.JOB_TITLE' | translate }}</h5>
+        <span><a href="#/about" class="btn btn-lg btn-primary"><span>{{ 'ABOUT' | translate }}</span><i
                 class="ti-user"></i></a></span>
         <a href="#" class="btn btn-link"><span>{{ 'CV' | translate }}</span><i class="ti-file"></i></a>
     </div>
@@ -19,37 +19,42 @@
 
 <section class="section padding-60">
 
-    <div class="row">
+    <div class="container container-wide">
 
-        <div class="col-lg-4">
-            <div class="text-center">
-                <i class="fa fa-3x fa-pencil"></i>
+        <h6 class="margin-b-50">{{ 'SERVICES' | translate }}</h6>
 
-                <h3>{{ 'DESIGN' | translate }}</h3>
+        <div class="row padding-lg">
 
-                <p class="text-justify">{{ 'DESIGN_TEXT' | translate }}</p>
+            <div class="col-md-4 col-sm-6 col-xs-12">
 
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="text-center">
-                <i class="fa fa-3x fa-code"></i>
+                <span class="icon"><i class="fa fa-pencil text-blue"></i></span>
 
-                <h3>{{ 'DEVELOPMENT' | translate }}</h3>
+                <h4><strong>{{ 'DESIGN' | translate }}</strong></h4>
 
-                <p class="text-justify">{{ 'DEVELOPMENT_TEXT' | translate }}</p>
+                <p class="lead">{{ 'DESIGN_TEXT' | translate }}</p>
 
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="text-center">
-                <i class="fa fa-3x fa-bar-chart"></i>
 
-                <h3>{{ 'ANALYTICS' | translate }}</h3>
+            <div class="col-md-4 col-sm-6 col-xs-12">
 
-                <p class="text-justify">{{ 'ANALYTICS_TEXT' | translate }}</p>
+                <span class="icon"><i class="fa fa-code text-blue"></i></span>
+
+                <h4><strong>{{ 'DEVELOPMENT' | translate }}</strong></h4>
+
+                <p class="lead">{{ 'DEVELOPMENT_TEXT' | translate }}</p>
+
 
             </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                <span class="icon"><i class="fa fa-bar-chart text-blue"></i></span>
+
+                <h4><strong>{{ 'ANALYTICS' | translate }}</strong></h4>
+
+                <p class="lead">{{ 'ANALYTICS_TEXT' | translate }}</p>
+
+            </div>
+
         </div>
 
     </div>
@@ -58,81 +63,112 @@
 
 <section class="section padding-60">
 
-        <div class="row">
+    <div class="container container-wide">
 
-            <div class="col-lg-12">
-                <div class="text-center">
-                    <h3>{{ 'FRAMEWORKS_TECHNOLOGIES' | translate }}</h3>
-                </div>
+        <h6 class="margin-b-50">{{ 'FRAMEWORKS_TECHNOLOGIES' | translate }}</h6>
+
+        <div class="row padding-lg">
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                <span class="icon">
+                    <img src="images/angularjs.png" class="img-home"></i>
+                </span>
+
+                <h4><strong>AngularJS</strong></h4>
+
+                <p>{{ 'ANGULAR_TEXT' | translate }}</p>
+
             </div>
 
-        </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
 
-        <div class="row" style="margin-top: 50px;">
+                <span class="icon">
+                    <img src="images/nodejs.png" class="img-home"></i>
+                </span>
 
-            <div class="col-lg-3">
-                <div class="text-center">
-                    <div><img src="images/angularjs.png" class="img-home"></div>
-                    <h4>AngularJS</h4>
-                </div>
+                <h4><strong>NodeJS</strong></h4>
+
+                <p>{{ 'NODEJS_TEXT' | translate }}</p>
+
             </div>
 
-            <div class="col-lg-3">
-                <div class="text-center">
-                    <div><img src="images/nodejs.png" class="img-home"></div>
-                    <h4>NodeJS</h4>
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                <span class="icon">
+                    <img src="images/play.png" class="img-home"></i>
+                </span>
+
+                <h4><strong>Play Framework</strong></h4>
+
+                <p>{{ 'PLAY_TEXT' | translate }}</p>
+
             </div>
 
-            <div class="col-lg-3">
-                <div class="text-center">
-                    <div><img src="images/play.png" class="img-home"></div>
-                    <h4>Play Framework</h4>
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                <span class="icon">
+                    <img src="images/ios.png" class="img-home"></i>
+                </span>
+
+                <h4><strong>iOS</strong></h4>
+
+                <p>{{ 'IOS_TEXT' | translate }}</p>
+
             </div>
 
-            <div class="col-lg-3">
-                <div class="text-center">
-                    <div><img src="images/ios.png" class="img-home"></div>
-                    <h4>iOS</h4>
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                <span class="icon">
+                    <img src="images/javaee.png" class="img-home"></i>
+                </span>
+
+                <h4><strong>Jave EE</strong></h4>
+
+                <p>{{ 'JAVAEE_TEXT' | translate }}</p>
+
             </div>
 
-        </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
 
-        <div class="row" style="margin-top: 50px;">
+                <span class="icon">
+                    <img src="images/aspnet.png" class="img-home"></i>
+                </span>
 
-            <div class="col-lg-3">
-                <div class="text-center">
-                    <div><img src="images/javaee.png" class="img-home"></div>
-                    <h4>Java EE</h4>
-                </div>
+                <h4><strong>ASP.NET</strong></h4>
+
+                <p>{{ 'ASPNET_TEXT' | translate }}</p>
+
             </div>
 
-            <div class="col-lg-3">
-                <div class="text-center">
-                    <div><img src="images/mongodb.png" class="img-home"></div>
-                    <h4>MongoDB</h4>
-                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                <span class="icon">
+                    <img src="images/mongodb.png" class="img-home"></i>
+                </span>
+
+                <h4><strong>MongoDB</strong></h4>
+
+                <p>{{ 'MONGO_TEXT' | translate }}</p>
+
             </div>
 
-            <div class="col-lg-3">
-                <div class="text-center">
-                    <div><img src="images/cassandra.svg" class="img-home"></div>
-                    <h4>Cassandra</h4>
-                </div>
-            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
 
-            <div class="col-lg-3">
-                <div class="text-center">
-                    <div><img src="images/spark.png" class="img-home"></div>
-                    <h4>Apache Spark</h4>
-                </div>
+                <span class="icon">
+                    <img src="images/spark.png" class="img-home"></i>
+                </span>
+
+                <h4><strong>Apache Spark</strong></h4>
+
+                <p>{{ 'SPARK_TEXT' | translate }}</p>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 <load-template></load-template>

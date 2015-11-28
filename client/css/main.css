@@ -2,6 +2,19 @@
     margin-top: 88px;
 }
 
+.bg-home {
+    background-image: url(../images/desktop-blur.jpg);
+}
+
+.bg-contact {
+    background-image: url(../images/contact.jpg);
+}
+
+.img-profile-96 {
+    height: 96px;
+    width: 96px;
+}
+
 .img-profile {
     border-radius: 50%;
     height: 120px;
@@ -31,12 +44,6 @@
     color: #FFFFFF;
 }
 
-.bg-home {
-    background-image: url(../images/desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 .bg-about {
     background-image: url(../images/about.jpg);
@@ -53,9 +60,5 @@
     background-position: center;
 }
 
-.bg-contact {
-    background-image: url(../images/contact.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 

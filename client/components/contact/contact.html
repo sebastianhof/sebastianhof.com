@@ -1,24 +1,42 @@
 <!-- Section - Contact -->
-<section id="contact" class="section padding-v-60 top">
+<section id="contact" class="section fullheight padding-v-60">
 
     <!-- BG Map -->
-    <div id="google-map" class="bg-image" data-latitude="49.6218352" data-longitude="10.8232851" data-style="light"></div>
+    <div class="bg-image animated infinite zooming bg-contact"></div>
 
     <!-- Contact Box -->
-    <div class="contact-box bg-secondary dark animated" data-animation="flipInY">
-        <h1>Don’t hesitate to <strong>contact me</strong>!</h1>
+    <div class="contact-box bg-secondary dark animated top" data-animation="flipInY">
+        <h1><strong>{{'CONTACT.ME' | translate }}</strong></h1>
+
         <!-- Contact List -->
-        <!--<ul class="list-unstyled list-unstyled-icons">-->
-            <!--<li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>1111-A Nowhere Lane,<br />Outta Sight,<br />State 90378, USA</li>-->
-            <!--<li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">johnathandoe@suelo.pl</a></li>-->
-            <!--<li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>+0(31)6 89764536</li>-->
-        <!--</ul>-->
-        <a class="btn btn-primary" data-target="messenger"><span>Use Contact Form</span><i class="ti-email"></i></a>
-        <h5 class="margin-t-60">Check my social media!</h5>
+        <ul class="list-unstyled list-unstyled-icons">
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>
+                {{ 'Am Mühlweiher 9' }}<br/>
+                {{ '91085 Weisendorf' }}<br/>
+                {{ 'GERMANY' | translate }}
+            </li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-envelope"></i>
+                <a>{{ 'contact@sebastianhof.com' }}</a>
+            </li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>{{ '+49 (0)151 22902263' }}
+            </li>
+        </ul>
+
+        <!-- Social media -->
+        <a class="btn btn-primary" data-target="messenger"><span>{{ 'CONTACT.FORM' | translate }}</span><i
+                class="ti-email"></i></a>
+        <h5 class="margin-t-60">{{ 'SOCIAL_MEDIA' | translate }}</h5>
         <ul class="list-inline">
-            <li><a href="#" class="icon icon-circle icon-xs icon-facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" class="icon icon-circle icon-xs icon-twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" class="icon icon-circle icon-xs icon-google-plus"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://linkedin.com/in/sebastianhof" class="icon icon-xs"><i
+                    class="fa fa-2x fa-linkedin text-muted"></i></a></li>
+            <li><a href="https://www.xing.com/profile/Sebastian_Hof7" class="icon icon-xs"><i
+                    class="fa fa-2x fa-xing text-muted"></i></a></li>
+            <li><a href="https://github.com/sebastianhof" class="icon icon-xs"><i
+                    class="fa fa-2x fa-github text-muted"></i></a></li>
+            <li><a href="https://www.facebook.com/1656428665" class="icon icon-xs"><i
+                    class="fa fa-2x fa-facebook text-muted"></i></a></li>
+            <li><a href="https://twitter.com/snhof" class="icon icon-xs"><i
+                    class="fa fa-2x fa-twitter text-muted"></i></a></li>
         </ul>
     </div>
 
@@ -27,44 +45,52 @@
 
 
 <!-- Messanger -->
-<a id="messenger-toggle" data-target="messenger" class="icon icon-sm icon-circle animated" data-animation="bounceIn" data-animation-delay="300"><i class="fa fa-comments"></i></a>
+<a id="messenger-toggle" data-target="messenger" class="icon icon-sm icon-circle animated" data-animation="bounceIn"
+   data-animation-delay="200"><i class="fa fa-comments"></i></a>
 <div id="messenger" class="dark">
     <div id="messenger-box">
         <div class="messenger-box-content">
             <!-- Close -->
-            <a class="messenger-close icon icon-hover icon-xs icon-circle icon-white" data-target="messenger"><i class="fa fa-times"></i></a>
+            <a class="messenger-close icon icon-hover icon-xs icon-circle icon-white" data-target="messenger"><i
+                    class="fa fa-times"></i></a>
             <!-- Avatar -->
-            <img src="assets/img/photos/it-avatar-96x96.jpg" alt="..." class="img-circle margin-b-30">
-            <h3>Please fill the <strong>form</strong> - I will response as fast as I can!</h3>
+            <img src="images/profile-96.png" alt="..." class="img-circle margin-b-30">
+
+            <h3>{{ 'CONTACT.FILL_IN' | translate }}</h3>
             <!-- Contact Form -->
             <form id="contact-form" name="contactForm" ng-submit="contact.submit(contactForm)">
-                <div class="form-alert"></div>
-                <div class="form-error alert alert-default"><ul></ul></div>
-                <div class="form-group">
-                    <label>{{ 'CONTACT.NAME' | translate }}:</label>
-                    <input type="text" id="name" class="form-control"  name="name" required
+                <div ng-if="contact.error">
+                    <div class="alert alert-danger">{{ 'CONTACT.ERROR' | translate }}</div>
+                </div>
+                <div ng-if="contact.success">
+                    <div class="alert alert-success">{{ 'CONTACT.SUCCESS' | translate }}</div>
+                </div>
+                <div class="alert alert-default" ng-if="contactForm.$error">
+                    <ul>
+                        <li ng-if="contactForm.name.$error.required">{{ 'CONTACT.NAME_TEXT' | translate }}</li>
+                        <li ng-if="contactForm.email.$error.required">{{ 'CONTACT.EMAIL_TEXT' | translate }}</li>
+                        <li ng-if="contactForm.email.$error.email">{{ 'CONTACT.VALID_EMAIL_TEXT' | translate }}</li>
+                        <li ng-if="contactForm.message.$error.required">{{ 'CONTACT.MESSAGE_TEXT' | translate }}</li>
+                    </ul>
                 </div>
                 <div class="form-group">
-                    <label>{{ 'CONTACT.EMAIL' | translate }}:</label>
-                    <input type="email" id="email"  class="form-control" placeholder="{{ 'CONTACT.EMAIL' | translate }}" id="email" name="email" required
-                           data-validation-required-message="{{ 'CONTACT.EMAIL_TEXT' | translate }}" ng-model="contact.data.email">
-                    <input class="form-control" type="text" name="email">
+                    <label>{{ 'CONTACT.NAME' | translate }}</label>
+                    <input type="text" class="form-control" name="name" required
+                           ng-model="contact.data.name"/>
                 </div>
                 <div class="form-group">
-                    <label>{{ 'CONTACT.MESSAGE_TEXT' | translate }}:</label>
-                    <textarea rows="5" class="form-control" placeholder="{{ 'CONTACT.MESSAGE' | translate }}" id="message" name="message" required
-                              data-validation-required-message="{{ 'CONTACT.MESSAGE_TEXT' | translate }}" ng-model="contact.data.message" rows="4"></textarea>
+                    <label>{{ 'CONTACT.EMAIL' | translate }}</label>
+                    <input type="email" class="form-control"
+                           id="email" name="email" required ng-model="contact.data.email"/>
+                </div>
+                <div class="form-group">
+                    <label>{{ 'CONTACT.MESSAGE' | translate }}</label>
+                    <textarea rows="5" class="form-control"
+                              name="message" required ng-model="contact.data.message" rows="4"></textarea>
                 </div>
 
-                <div class="col-xs-12" ng-if="contact.error">
-                    <div class="alert alert-danger" role="alert">{{ 'CONTACT.ERROR' | translate }}</div>
-                </div>
-
-                <div class="col-xs-12" ng-if="contact.success">
-                    <div class="alert alert-success" role="alert">{{ 'CONTACT.SUCCESS' | translate }}</div>
-                </div>
-
-                <button type="submit" class="btn btn-secondary"><span>{{ 'CONTACT.SEND' | translate}}</span><i class="ti-email"></i></button>
+                <button type="submit" class="btn btn-secondary"><span>{{ 'CONTACT.SEND' | translate}}</span><i
+                        class="ti-email"></i></button>
             </form>
         </div>
     </div>
