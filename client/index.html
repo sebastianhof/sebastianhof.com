@@ -69,6 +69,7 @@
             <li><a href="#/">{{ 'HOME.HOME' | translate }}</a></li>
             <li><a href="#/about">{{ 'ABOUT.ABOUT' | translate }}</a></li>
             <li><a href="#/projects">{{ 'PROJECTS.PROJECTS' | translate }}</a></li>
+            <li><a href="#/blog">{{ 'BLOG.BLOG' | translate }}</a></li>
             <li><a href="#/contact">{{ 'CONTACT.CONTACT' | translate }}</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown">{{ app.currentLang }}</a>
@@ -125,6 +126,7 @@
             <li><a href="#/"><span>{{ 'HOME.HOME' | translate }}</span></a></li>
             <li><a href="#/about"><span>{{ 'ABOUT.ABOUT' | translate }}</span></a></li>
             <li><a href="#/projects"><span>{{ 'PROJECTS.PROJECTS' | translate }}</span></a></li>
+            <li><a href="#/blog">{{ 'BLOG.BLOG' | translate }}</a></li>
             <li><a href="#/contact"><span>{{ 'CONTACT.CONTACT' | translate }}</span></a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown">{{ app.currentLang }}</a>
@@ -165,6 +167,8 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+<!-- Showdown -->
+<script src="bower_components/showdown/compressed/Showdown.min.js"></script>
 
 <!-- Angular JS -->
 <script src="bower_components/angular/angular.min.js"></script>
@@ -174,13 +178,14 @@
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 <script src="bower_components/angular-new-router/dist/router.es5.min.js"></script>
+<script src="bower_components/angular-markdown-directive/markdown.js"></script>
 <script src="components/about/about.js"></script>
 <script src="components/contact/contact.js"></script>
 <script src="components/home/home.js"></script>
 <script src="components/projects/projects.js"></script>
 <script src="components/imprint/imprint.js"></script>
 <script src="components/privacy/privacy.js"></script>
-<script src="components/secret/secret.js"></script>
+<script src="components/blog/blog.js"></script>
 <script src="app.js"></script>
 
 <!-- JS Plugins -->

@@ -1,4 +1,4 @@
-angular.module('app', ['ngNewRouter', 'ngSanitize', 'ngTouch', 'pascalprecht.translate', 'ui.bootstrap', 'app.home', 'app.about', 'app.projects', 'app.contact', 'app.imprint', 'app.privacy', 'app.secret'])
+angular.module('app', ['ngNewRouter', 'ngSanitize', 'ngTouch', 'pascalprecht.translate', 'ui.bootstrap', 'app.home', 'app.about', 'app.projects', 'app.contact', 'app.imprint', 'app.privacy', 'app.blog'])
     .config(function ($translateProvider) {
 
         $translateProvider.useStaticFilesLoader({
@@ -24,7 +24,7 @@ AppController.$routeConfig = [
     {path: '/contact', component: 'contact'},
     {path: '/imprint', component: 'imprint'},
     {path: '/privacy', component: 'privacy'},
-    {path: '/secret', component: 'secret'}
+    {path: '/blog', component: 'blog'}
 ];
 function AppController($router, $translate, $rootScope) {
 

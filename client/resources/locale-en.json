@@ -187,5 +187,10 @@
   },
   "PRIVACY": {
     "PRIVACY": "Privacy"
+  },
+  "BLOG": {
+    "BLOG": "Blog",
+    "POSTS": "Posts",
+    "READ_MORE": "Read more"
   }
 }

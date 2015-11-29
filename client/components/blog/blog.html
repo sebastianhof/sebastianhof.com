@@ -1,0 +1,49 @@
+<section id="posts" class="section padding-60 top bg-grey fullminheight" ng-if="blog.currentPost == null">
+
+    <!-- Content -->
+    <div class="container container-wide">
+
+        <h6 class="margin-b-50">{{ 'BLOG.POSTS' | translate}}</h6>
+
+        <div class="row padding-lg">
+
+            <blog-post ng-repeat="post in blog.posts" post="post"></blog-post>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="post" class="section padding-b-60 top bg-grey fullminheight" ng-if="blog.currentPost != null">
+
+    <!-- Content -->
+    <div class="container container-wide">
+
+        <div class="text-center margin-t-20 margin-b-20">
+            <a class="icon icon-circle icon-hover icon-sm icon-secondary" ng-click="blog.showPosts()"><i
+                    class="ti-list"></i></a>
+        </div>
+
+        <div class="row">
+            <!-- Post -->
+            <article class="post col-lg-10 col-lg-push-1">
+                <div class="post-content">
+                    <div class="meta">
+                        <span><i class="fa fa-user"></i><a href="#">Sebastian Hof</a></span>
+                        <span ng-repeat="tag in blog.currentPost.tags"><i class="fa fa-tag"></i>{{tag}}</span>
+                    </div>
+                    <div class="date">{{blog.currentPost.date | date}}</div>
+                    <h1>{{blog.currentPost.title}}</h1>
+
+                    <p class="lead">{{blog.currentPost.excerpt}}</p>
+
+                    <div btf-markdown="blog.currentPost.raw"></div>
+
+                </div>
+            </article>
+        </div>
+
+    </div>
+
+</section>
