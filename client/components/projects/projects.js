@@ -27,10 +27,23 @@ angular.module('app.projects', [])
                     </div>\
                 </div>\
             ',
-            controller: ['$scope', function($scope) {
+            controller: ['$scope', '$uibModal', function($scope, $uibModal) {
 
+                this.openModal = function() {
 
+                    $uibModal.open({
+                        templateUrl: $scope.url,
+                        controller: ['$uibModalInstance', function($uibModalInstance) {
 
+                            this.close = function() {
+                                $uibModalInstance.dismiss();
+                            }
+
+                        }],
+                        controllerAs: 'dialog'
+                    })
+
+                };
 
             }],
             controllerAs: 'projectsItem'

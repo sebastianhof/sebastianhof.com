@@ -1,4 +1,4 @@
-angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'app.home', 'app.about', 'app.projects', 'app.contact'])
+angular.module('app', ['ngNewRouter', 'ngSanitize', 'pascalprecht.translate', 'ui.bootstrap', 'app.home', 'app.about', 'app.projects', 'app.contact'])
     .config(function ($translateProvider) {
 
         $translateProvider.useStaticFilesLoader({
