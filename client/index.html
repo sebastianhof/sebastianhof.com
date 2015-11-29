@@ -95,11 +95,17 @@
 <!-- Header / End -->
 
 <!-- Content -->
-<div id="content" class="bg-white" ng-viewport>
-
-
-</div>
+<div id="content" class="bg-white" ng-viewport></div>
 <!-- Content / End -->
+<footer id="footer" class="bg-primary" data-sr="enter bottom">
+    <div class="container container-wide text-center padding-20">
+        <span>&copy;&nbsp;2015&nbsp;sebastianhof.com</span>
+        <span><a href="#/imprint" class="btn btn-xs text-white" style="padding: 5px;">{{ 'IMPRINT.IMPRINT' |
+            translate}}</a></span>
+        <span><a href="#/privacy" class="btn btn-xs text-white" style="padding: 5px;">{{ 'PRIVACY.PRIVACY' |
+            translate}}</a></span>
+    </div>
+</footer>
 
 <!-- Mobile Navigation -->
 <a id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm"
@@ -164,6 +170,8 @@
 <script src="components/contact/contact.js"></script>
 <script src="components/home/home.js"></script>
 <script src="components/projects/projects.js"></script>
+<script src="components/imprint/imprint.js"></script>
+<script src="components/privacy/privacy.js"></script>
 <script src="app.js"></script>
 
 <!-- JS Plugins -->
@@ -207,7 +215,7 @@
 <script src="bower_components/scrollreveal/dist/scrollReveal.min.js"></script>
 <script>
     var config = {
-        reset:    true
+        reset: true
     };
     window.sr = new scrollReveal(config);
 </script>

@@ -181,5 +181,11 @@
     "SEND": "Send",
     "ERROR_MESSAGE": "Could not send message. Please try again.",
     "SUCCESS_MESSAGE": "Message sent."
+  },
+  "IMPRINT": {
+    "IMPRINT": "Imprint"
+  },
+  "PRIVACY": {
+    "PRIVACY": "Privacy"
   }
 }

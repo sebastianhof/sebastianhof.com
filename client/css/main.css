@@ -31,4 +31,12 @@
     -o-animation-duration: 15s
 }
 
+#footer {
+    -webkit-box-shadow: 30px 0px 0px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 30px 0px 0px 0px rgba(0,0,0,0.1);
+    box-shadow: 30px 0px 0px 0px rgba(0,0,0,0.1);
+}
 
+.fullminheight {
+    min-width: 100vh;
+}
