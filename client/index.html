@@ -156,6 +156,9 @@
     </div>
 </nav>
 
+<!-- Modernizr -->
+<script src="bower_components/mobile-detect/mobile-detect.min.js"></script>
+
 <!-- JS Libraries -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -167,6 +170,7 @@
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+<script src="bower_components/angular-touch/angular-touch.min.js"></script>
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 <script src="bower_components/angular-new-router/dist/router.es5.min.js"></script>
@@ -218,8 +222,11 @@
 <!-- ScrollReveal -->
 <script src="bower_components/scrollreveal/dist/scrollReveal.min.js"></script>
 <script>
+    var md = new MobileDetect(window.navigator.userAgent);
+
     var config = {
-        reset: true
+        reset: true,
+        mobile: md.mobile()
     };
     window.sr = new scrollReveal(config);
 </script>
