@@ -9,14 +9,14 @@ import * as route53Targets from 'aws-cdk-lib/aws-route53-targets';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as s3Deployment from 'aws-cdk-lib/aws-s3-deployment';
 
-export interface StaticSiteProps extends StackProps {
+export interface StaticSiteStackProps extends StackProps {
   domainName: string; 
   bucketName: string;
 }
 
 export class StaticSiteStack extends Stack {
 
-  constructor(scope: Construct, id: string, props: StaticSiteProps) {
+  constructor(scope: Construct, id: string, props: StaticSiteStackProps) {
     super(scope, id, props);
 
     /*
