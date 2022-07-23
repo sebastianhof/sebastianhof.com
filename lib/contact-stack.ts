@@ -15,6 +15,7 @@ import {
 } from "aws-cdk-lib/aws-iam";
 import { Construct } from "constructs";
 import * as path from "path";
+import { StringParameter } from "aws-cdk-lib/aws-ssm";
 
 export interface ContactStackProps extends StackProps {
   domainName: string;
@@ -42,7 +43,7 @@ export class ContactStack extends Stack {
         inlinePolicies: {
           SendSESEmail: sendEmailPolicyDocument
         },
-        managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName('AWSLambdaBasicExecutionRole')]
+        managedPolicies: [ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSLambdaBasicExecutionRole')]
       }
     );
 
@@ -50,7 +51,12 @@ export class ContactStack extends Stack {
       runtime: Runtime.NODEJS_16_X,
       handler: "handler",
       entry: path.join(__dirname, "functions", "contact.ts"),
+      projectRoot: path.join(__dirname, "functions"),
+      depsLockFilePath:  path.join(__dirname, "functions", "package-lock.json"),
       role: contactFunctionExecutionRole,
+      environment: {
+        RECAPTCHA_SECRET_KEY: StringParameter.valueForStringParameter(this, 'recaptcha_secret_access_key', 2)
+      }
     });
     const contactFunctionUrl = new FunctionUrl(this, "FunctionUrl", {
       function: contactFunction,
@@ -61,6 +67,7 @@ export class ContactStack extends Stack {
           `https://${props.domainName}`,
         ],
         allowedMethods: [HttpMethod.POST, HttpMethod.HEAD],
+        allowedHeaders: ['Content-Type']
       },
     });
 

@@ -5,6 +5,11 @@ import { StaticSiteStack } from '../lib/static-site-stack';
 import { ContactStack } from '../lib/contact-stack';
 
 const app = new cdk.App();
+
+new ContactStack(app, 'SebastianhofComContactStack', {
+  domainName: 'sebastianhof.com'
+})
+
 new StaticSiteStack(app, 'SebastianhofComStack', {
   domainName: 'sebastianhof.com',
   bucketName: 'sebastianhof.com',
@@ -13,6 +18,3 @@ new StaticSiteStack(app, 'SebastianhofComStack', {
     region: process.env.CDK_DEFAULT_REGION
   }
 });
-new ContactStack(app, 'SebastianhofComContactStack', {
-  domainName: 'sebastianhof.com'
-})
