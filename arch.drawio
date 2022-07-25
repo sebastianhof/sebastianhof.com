@@ -1,10 +1,10 @@
 <mxfile host="65bd71144e">
     <diagram id="2StR0xFdEU6WrKIHRQJK" name="Page-1">
-        <mxGraphModel dx="958" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="958" dy="282" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="16" value="reCAPTCHA Server" style="fillColor=#EFF0F3;strokeColor=none;dashed=0;verticalAlign=top;fontStyle=0;fontColor=#232F3D;" vertex="1" parent="1">
+                <mxCell id="16" value="reCAPTCHA Server" style="fillColor=#EFF0F3;strokeColor=none;dashed=0;verticalAlign=middle;fontStyle=1;fontColor=#232F3D;" vertex="1" parent="1">
                     <mxGeometry x="190" y="600" width="440" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="AWS Cloud" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" vertex="1" parent="1">
@@ -84,9 +84,6 @@
                 </mxCell>
                 <mxCell id="11" value="&lt;font color=&quot;#000000&quot;&gt;Client&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="30" y="385" width="60" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="12" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.google.com/recaptcha/about/images/reCAPTCHA-enterprise.png;" vertex="1" parent="1">
-                    <mxGeometry x="300" y="620" width="190.48" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="Email Inbox" style="fillColor=#EFF0F3;strokeColor=none;dashed=0;verticalAlign=top;fontStyle=0;fontColor=#232F3D;" vertex="1" parent="1">
                     <mxGeometry x="650" y="432.5" width="110" height="130" as="geometry"/>
