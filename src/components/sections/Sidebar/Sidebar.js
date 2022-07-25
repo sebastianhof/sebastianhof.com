@@ -69,7 +69,7 @@ const Sidebar = () => {
           </a>
         </p>
         <a
-          href="#0"
+          href="resume.pdf"
           className="inline-block mb-3 rounded bg-purple-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
           download="Resume"
         >
@@ -81,7 +81,7 @@ const Sidebar = () => {
           ))}
         </ul>
       </div>
-      <div className="text-start pt-4">
+      {/* <div className="text-start pt-4">
         <h3 className="text-md mb-2 uppercase font-medium text-gray-800">
           About Me
         </h3>
@@ -91,7 +91,7 @@ const Sidebar = () => {
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren, no sea takimata sanctus.
         </p>
-      </div>
+      </div> */}
     </aside>
   );
 };
